@@ -1,11 +1,25 @@
 #!/bin/bash
 
 #
+# FUNCTIONS
+#
+
+npm () {
+  local to_execute=''
+
+  if [[ "$OSTYPE" == 'msys' ]]; then
+    to_execute='winpty npm.cmd'
+  else
+    to_execute='npm'
+  fi
+
+  eval "${to_execute} $*"
+}
+
+#
 # ALIASES
 #
 
-# TODO: Use 'winpty npm.cmd' in Windows and 'npm' in Unix
-alias npm='winpty npm.cmd'
 alias npmSE='npm i -E'
 alias npmDE='npm i -D -E'
 alias npmG='npm i -g'
