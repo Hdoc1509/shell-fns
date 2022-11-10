@@ -4,18 +4,15 @@
 # FUNCTIONS
 #
 
-nv_flag () {
-  local nvFzfFlag='-c ":FZF --reverse"'
-  [[ "$1" == '.' ]] && echo "${nvFzfFlag} ." || echo "-p $*"
-}
+nv_flag () { [[ "$1" == '.' ]] && echo "${SF_NV_FLAGS} ." || echo "-p $*"; }
 
 nv () {
   local to_execute=''
 
-  if [[ "$OSTYPE" == 'linux-gnu'* ]]; then
-    to_execute='nvim'
-  elif [[ "$OSTYPE" == 'msys' ]]; then
+  if [[ "$OSTYPE" == 'msys' ]]; then
     to_execute='winpty nvim'
+  else
+    to_execute='nvim'
   fi
 
   eval "${to_execute} $(nv_flag "$@")"
