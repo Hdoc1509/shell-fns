@@ -30,6 +30,7 @@ export SF_PLUGINS=(... git)
 | gpl   | git pull               |
 | grm   | git rm                 |
 | grs   | git restore            |
+| grss  | git restore --staged   |
 | grt   | git reset              |
 | grts  | git reset --soft       |
 | gst   | git status             |
