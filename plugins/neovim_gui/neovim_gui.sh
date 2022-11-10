@@ -7,5 +7,5 @@ source "$SF_PATH"/plugins/neovim/neovim.sh
 #
 
 nvq () { eval "nvim-qt -- $(nv_flag "$@")"; }
-nvqNb () { eval "nvim-qt -- $(nv_flag "@") & /dev/null"; }
+nvqNb () { nvq "$@" & /dev/null; }
 nvd () { eval "neovide --multigrid -- $(nv_flag "$@")"; }
