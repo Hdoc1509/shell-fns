@@ -1,7 +1,5 @@
 # shell-fns
 
-## Introduction
-
 Minimalist plugins for bash and zsh.
 
 ## Installation
@@ -34,17 +32,23 @@ source ~/.config/shell-fns/main.sh
 
 ### Plugins
 
-- [dev](/plugins/dev/README.md)
-- [git](/plugins/git/README.md)
-- [git_bash](/plugins/git_bash/README.md)
-- [neovim](/plugins/neovim/README.md)
-- [neovim_gui](/plugins/neovim_gui/README.md)
-- [npm](/plugins/npm/README.md)
-- [npm_check_updates](/plugins/npm_check_updates/README.md)
-- [python](/plugins/python/README.md)
-- [shell](/plugins/shell/README.md)
-- [vitejs](/plugins/vitejs/README.md)
-- [wezterm](/plugins/wezterm/README.md)
+- [dev](/plugins/dev/)
+- [git](/plugins/git/)
+- [git_bash](/plugins/git_bash/)
+- [neovim](/plugins/neovim/)
+- [neovim_gui](/plugins/neovim_gui/)
+- [npm](/plugins/npm/)
+- [npm_check_updates](/plugins/npm_check_updates/)
+- [python](/plugins/python/)
+- [shell](/plugins/shell/)
+- [vitejs](/plugins/vitejs/)
+- [wezterm](/plugins/wezterm/)
+
+### Built-in aliases
+
+| Alias | Command                                |
+| ----- | -------------------------------------- |
+| sfCfg | cd ~/.config/shell-fns; ${SF_EDITOR} . |
 
 ### Colored messages
 
