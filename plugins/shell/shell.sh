@@ -20,7 +20,7 @@ SF_ls () {
 # ALIASES
 #
 
-alias cat='SF_CAT'
+alias cat='$SF_CAT'
 alias cls='clear'
 alias ls='SF_ls'
 alias ll='ls -lh'
