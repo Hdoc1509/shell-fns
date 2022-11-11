@@ -32,4 +32,4 @@ export SF_PLUGINS=(... cmd_line)
 
 - `SF_LSD_FLAGS`: Flags to pass to `SF_ls` function on `msys` terminal.
 - `SF_EXA_FLAGS`: Flags to pass to `SF_ls` function on Unix Systems.
-- `SF_CAT`: Name of `bat` executable. For Ubuntu/Debian systems where `bat` was installed using `apt` you can set it to `batcat`.
+- `SF_CAT`: Name of `bat` executable. For Ubuntu/Debian systems where `bat` was installed using `apt` you should set it to `batcat`.
