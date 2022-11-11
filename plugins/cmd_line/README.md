@@ -1,11 +1,11 @@
-# shell plugin
+# cmd_line plugin
 
-The `shell` plugin provides some [aliases](#aliases) and [functions](#functions) related to command-line programs.
+The `cmd_line` plugin provides some [aliases](#aliases) and [functions](#functions) related to command-line programs.
 
-To use it, add `shell` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
+To use it, add `cmd_line` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
-export SF_PLUGINS=(... shell)
+export SF_PLUGINS=(... cmd_line)
 ```
 
 ## Requirements
