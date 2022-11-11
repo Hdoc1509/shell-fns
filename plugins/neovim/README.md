@@ -23,6 +23,8 @@ export SF_PLUGINS=(... neovim)
 - `SF_EDITOR`(\*): Editor executable name. Example: `subl`, `code`, `nvim`. It can also be editor functions of [neovim](/plugins/neovim/) and [neovim_gui](/plugins/neovim_gui/) plugins.
 - `SF_NV_FLAGS`: Flags to pass for `nv` and [neovim_gui](/plugins/neovim_gui/) functions.
 
+**(\*): Required variables.**
+
 ## Related software configuration
 
 - [nvim-config](https://github.com/Hdoc1509/nvim-config)
