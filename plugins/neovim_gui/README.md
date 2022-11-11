@@ -21,3 +21,5 @@ export SF_PLUGINS=(... neovim_gui)
 - `SF_NV_FLAGS`: Flags to pass for `nv` and `neovim_gui` functions.
 
 # Related software configuration
+
+- [nvim-config](https://github.com/Hdoc1509/nvim-config)
