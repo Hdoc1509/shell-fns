@@ -25,7 +25,7 @@ Source `~/.config/shell-fns/main.sh` after setting required variables and desire
 ```sh
 export SF_EDITOR='subl'
 export SF_DEV_FOLDER='/d/Dev'
-export SF_PLUGINS=( dev git npm pip shell )
+export SF_PLUGINS=( dev git npm pip cmd_line )
 
 source ~/.config/shell-fns/main.sh
 ```
@@ -40,7 +40,7 @@ source ~/.config/shell-fns/main.sh
 - [npm](/plugins/npm/)
 - [npm_check_updates](/plugins/npm_check_updates/)
 - [pip](/plugins/pip/)
-- [shell](/plugins/shell/)
+- [cmd_line](/plugins/cmd_line/)
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
 
