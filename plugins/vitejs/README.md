@@ -12,6 +12,6 @@ export SF_PLUGINS=(... vitejs)
 
 - `vite`: Simplify command for scaffold a vitejs project.
   - Parameters:
-    - $1: Target directory
-    - $2: Desired template. You should take a look to the [supported templates](https://github.com/vitejs/vite/tree/main/packages/create-vite#scaffolding-your-first-vite-project)
+    - $1: Desired template. You should take a look to the [supported templates](https://github.com/vitejs/vite/tree/main/packages/create-vite#scaffolding-your-first-vite-project)
+    - $2: Target directory
 
