@@ -46,9 +46,15 @@ source ~/.config/shell-fns/main.sh
 
 ### Built-in aliases
 
-| Alias | Command                                |
-| ----- | -------------------------------------- |
-| sfCfg | cd ~/.config/shell-fns; ${SF_EDITOR} . |
+| Alias | Description                                                                              |
+| ----- | ---------------------------------------------------------------------------------------- |
+| sfCfg | Change directory to `~/.config/shell-fns` and open editor setted in `SF_EDITOR` variable |
+
+### Global variables
+
+These variables are required and are used by some plugins:
+
+- `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `neovim`. It can also be editor functions of [`neovim`](/plugins/neovim/) and [`neovim_gui`](/plugins/neovim_gui/) plugins.
 
 ### Colored messages
 
