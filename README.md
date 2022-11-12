@@ -32,6 +32,7 @@ source ~/.config/shell-fns/main.sh
 
 ### Plugins
 
+- [cmd_line](/plugins/cmd_line/)
 - [dev](/plugins/dev/)
 - [git](/plugins/git/)
 - [git_bash](/plugins/git_bash/)
@@ -40,7 +41,6 @@ source ~/.config/shell-fns/main.sh
 - [npm](/plugins/npm/)
 - [npm_check_updates](/plugins/npm_check_updates/)
 - [pip](/plugins/pip/)
-- [cmd_line](/plugins/cmd_line/)
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
 
