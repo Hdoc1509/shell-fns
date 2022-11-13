@@ -4,4 +4,6 @@
 # ALIASES
 #
 
-alias wtCfg='cd ~/.config/wezterm; ${SF_EDITOR} .'
+if [[ -n "$SF_EDITOR" ]]; then
+  alias wtCfg='cd ~/.config/wezterm; ${SF_EDITOR} .'
+fi
