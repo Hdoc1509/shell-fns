@@ -1,6 +1,6 @@
 # npm plugin
 
-The `npm` plugin provides some [aliases](#aliases) and [functions](#functions) related to `npm`.
+The `npm` plugin provides some [aliases](#aliases) for `npm`.
 
 To use it, add `npm` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -9,6 +9,8 @@ export SF_PLUGINS=(... neovim)
 ```
 
 ## Aliases
+
+This plugin set the alias `npm` which will run `winpty` automatically on `msys` terminals.
 
 | Alias    | Command               |
 | -------- | --------------------- |
@@ -22,6 +24,3 @@ export SF_PLUGINS=(... neovim)
 | npmPkgs  | npm list --depth 0    |
 | npmGPkgs | npm list -g --depth 0 |
 
-## Functions
-
-- `npm`: Same as executes `npm`, but it will execute `winpty` if you are using a `msys` terminal.
