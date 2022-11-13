@@ -8,10 +8,6 @@ if [[ -z "$SF_EDITOR" ]]; then
   echo -e "${orange}Warning: SF_EDITOR is unset${nocolor}"
 fi
 
-if [[ -z "$SF_DEV_FOLDER" ]]; then
-  echo -e "${orange}Warning: SF_DEV_FOLDER is unset${nocolor}"
-fi
-
 if [[ -z "$SF_PLUGINS" ]]; then
   echo -e "${orange}Warning: No plugins selected${nocolor}"
 else
