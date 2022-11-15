@@ -12,12 +12,6 @@ Clone the repository in your user-specific configurations folder: `$HOME/.config
 git clone --depth 1 https://github.com/Hdoc1509/shell-fns.git ~/.config/shell-fns
 ```
 
-- Via [`tiged`](https://github.com/tiged/tiged#installation):
-
-```sh
-tiged Hdoc1509/shell-fns ~/.config/shell-fns
-```
-
 ## Usage
 
 Source `~/.config/shell-fns/main.sh` after setting required variables and desired plugins in your `~/-bashrc` or `~/.zshrc` file:
@@ -35,11 +29,11 @@ source ~/.config/shell-fns/main.sh
 - [cmd_line](/plugins/cmd_line/)
 - [dev](/plugins/dev/)
 - [git](/plugins/git/)
-- [git_bash](/plugins/git_bash/)
 - [neovim](/plugins/neovim/)
 - [neovim_gui](/plugins/neovim_gui/)
 - [npm](/plugins/npm/)
 - [npm_check_updates](/plugins/npm_check_updates/)
+- [nvm](/plugins/nvm/)
 - [pip](/plugins/pip/)
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
