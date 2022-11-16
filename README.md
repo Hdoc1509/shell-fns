@@ -35,6 +35,7 @@ source ~/.config/shell-fns/main.sh
 - [npm_check_updates](/plugins/npm_check_updates/)
 - [nvm](/plugins/nvm/)
 - [pip](/plugins/pip/)
+- [pnpm](/plugins/pnpm/)
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
 
