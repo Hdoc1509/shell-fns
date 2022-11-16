@@ -12,15 +12,22 @@ export SF_PLUGINS=(... neovim)
 
 This plugin set the alias `npm` which will run `winpty` automatically on `msys` terminals.
 
-| Alias    | Command               |
-| -------- | --------------------- |
-| npmSE    | npm i -E              |
-| npmDE    | npm i -D -E           |
-| npmG     | npm i -g              |
-| npmU     | npm uninstall         |
-| npmUG    | npm uninstall -g      |
-| npmT     | npm test              |
-| npmDev   | npm run dev           |
-| npmPkgs  | npm list --depth 0    |
-| npmGPkgs | npm list -g --depth 0 |
-
+| Alias  | Command          |
+| ------ | ---------------- |
+| npmD   | npm i -D         |
+| npmDE  | npm i -D -E      |
+| npmDev | npm run dev      |
+| npmE   | npm i -E         |
+| npmG   | npm i -g         |
+| npmi   | npm install      |
+| npmI   | npm init         |
+| npmIY  | npm init -y      |
+| npmL   | npm list         |
+| npmLG  | npm list -g      |
+| npmO   | npm outdated     |
+| npmOG  | npm outdated -g  |
+| npmR   | npm run          |
+| npmS   | npm start        |
+| npmT   | npm test         |
+| npmU   | npm uninstall    |
+| npmUG  | npm uninstall -g |
