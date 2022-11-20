@@ -21,7 +21,7 @@ export SF_PLUGINS=(... cmd_line)
 | cat   | bat     |
 | cls   | clear   |
 | ls    | SF_ls   |
-| ll    | ls -lh  |
+| ll    | ls -l   |
 | lsa   | ls -a   |
 
 ## Functions
