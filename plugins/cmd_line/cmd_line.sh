@@ -29,5 +29,6 @@ fi
 
 alias cls='clear'
 alias ls='SF_ls'
-alias ll='ls -l'
 alias lsa='ls -a'
+alias ll='ls -l'
+alias lla='ls -la'
