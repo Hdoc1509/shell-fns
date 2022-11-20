@@ -18,7 +18,7 @@ export SF_PLUGINS=(... neovim_gui)
 
 ## Settings
 
-- `SF_NV_FLAGS`: Flags to pass for `nv` and `neovim_gui` functions.
+- `SF_NV_FLAGS`: Flags to pass for functions of [`neovim`](/plugins/neovim/) and `neovim_gui` plugins.
 
 ## Related software configuration
 
