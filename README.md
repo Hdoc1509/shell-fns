@@ -6,15 +6,14 @@ Minimalist plugins for bash and zsh.
 
 Clone the repository in your user-specific configurations folder: `$HOME/.config`.
 
-- Via `git clone`:
-
 ```sh
 git clone --depth 1 https://github.com/Hdoc1509/shell-fns.git ~/.config/shell-fns
 ```
 
 ## Usage
 
-Source `~/.config/shell-fns/main.sh` after setting required variables and desired plugins in your `~/-bashrc` or `~/.zshrc` file:
+Source `~/.config/shell-fns/main.sh` after setting required variables and desired
+plugins in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
 export SF_EDITOR='subl'
@@ -49,7 +48,7 @@ source ~/.config/shell-fns/main.sh
 
 These variables are required and are used by some plugins:
 
-- `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `neovim`. It can also be editor functions of [`neovim`](/plugins/neovim/) and [`neovim_gui`](/plugins/neovim_gui/) plugins.
+- `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `nvim`. It can also be editor functions of [`neovim`](/plugins/neovim/) and [`neovim_gui`](/plugins/neovim_gui/) plugins.
 
 ### Colored messages
 
