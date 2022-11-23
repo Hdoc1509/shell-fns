@@ -4,7 +4,13 @@
 # FUNCTIONS
 #
 
-nv_flag () { [[ "$1" == '.' ]] && echo "${SF_NV_FLAGS} ." || echo "-p $*"; }
+nv_flag () {
+  if [[ "$1" == '.' ]]; then
+    echo "${SF_NV_FLAGS_FOLDER} ."
+  else
+    echo "${SF_NV_FLAGS_FILES} -p $*"
+  fi
+}
 
 nv () {
   local to_execute=""
