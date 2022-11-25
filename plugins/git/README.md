@@ -39,6 +39,7 @@ export SF_PLUGINS=(... git)
 | grt   | git reset                  |
 | grts  | git reset --soft           |
 | gsh   | git show                   |
+| gshH  | git show HEAD              |
 | gst   | git status                 |
 | gsts  | git status --short         |
 | gt    | git tag                    |
