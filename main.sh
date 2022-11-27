@@ -18,7 +18,7 @@ else
 fi
 
 if [[ -n "$SF_EDITOR" ]]; then
-  alias sfCfg='cd ${SF_PATH}; ${SF_EDITOR} .'
+  alias sfCf='cd ${SF_PATH}; ${SF_EDITOR} .'
 fi
 
 if [[ "$SF_START_DEV_FOLDER" == 'true' ]]; then dev; fi
