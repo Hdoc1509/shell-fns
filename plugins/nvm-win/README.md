@@ -30,4 +30,4 @@ export SF_PLUGINS=(... nvm-win)
 | nvmUlts | nvm use lts        |
 | nvmUn   | nvm use newest     |
 | nvmr    | nvm root           |
-| nvmv    | nvm version        |
+| nvmV    | nvm version        |
