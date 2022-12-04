@@ -1,6 +1,6 @@
 # cmd_line plugin
 
-The `cmd_line` plugin provides some [aliases](#aliases) and [functions](#functions) related to command-line programs.
+The `cmd_line` plugin provides some [aliases](#aliases) related to command-line programs.
 
 To use it, add `cmd_line` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -16,21 +16,17 @@ export SF_PLUGINS=(... cmd_line)
 
 ## Aliases
 
-| Alias | Command |
-| ----- | ------- |
-| cat   | bat     |
-| cls   | clear   |
-| ls    | SF_ls   |
-| lsa   | ls -a   |
-| ll    | ls -l   |
-| lla   | ls -la  |
-
-## Functions
-
-- `SF_ls`: Executes `lsd` on `msys` terminal and `exa` on Unix systems.
+| Alias | Command      |
+| ----- | ------------ |
+| cat   | bat / batcat |
+| cls   | clear        |
+| ls    | lsd / exa    |
+| lsa   | ls -a        |
+| ll    | ls -l        |
+| lla   | ls -la       |
 
 ## Settings
 
-- `SF_LSD_FLAGS`: Flags to pass to `SF_ls` function on `msys` terminal.
-- `SF_EXA_FLAGS`: Flags to pass to `SF_ls` function on Unix Systems.
+- `SF_LSD_FLAGS`: Flags to pass to `lsd` on `msys` terminal.
+- `SF_EXA_FLAGS`: Flags to pass to `exa` on Unix systems.
 - `SF_CAT`: Name of `bat` executable. For Ubuntu/Debian systems where `bat` was installed using `apt` you should set it to `batcat`.
