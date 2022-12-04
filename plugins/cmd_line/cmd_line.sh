@@ -1,24 +1,5 @@
 #!/bin/bash
-
-#
-# FUNCTIONS
-#
-
-SF_ls () {
-  local to_execute=''
-
-  if [[ "$OSTYPE" == 'msys' ]]; then
-    to_execute="lsd ${SF_LSD_FLAGS}"
-  else
-    to_execute="exa ${SF_EXA_FLAGS}"
-  fi
-
-  eval "${to_execute} $*"
-}
-
-#
-# ALIASES
-#
+# shellcheck disable=SC2139
 
 if [[ -z "$SF_CAT" ]]; then
   # shellcheck disable=SC2154
@@ -28,7 +9,13 @@ else
 fi
 
 alias cls='clear'
-alias ls='SF_ls'
+
+if [[ "$OSTYPE" == 'msys' ]]; then
+  alias ls="lsd ${SF_LSD_FLAGS}"
+else
+  alias ls="exa ${SF_EXA_FLAGS}"
+fi
+
 alias lsa='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
