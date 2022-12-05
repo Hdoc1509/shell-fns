@@ -12,14 +12,14 @@ export SF_PLUGINS=(... neovim_gui)
 
 ## Functions
 
-- `nvq`: Executes `nvim-qt` with flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_FOLDER` variables.
+- `nvq`: Executes `nvim-qt` with flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_CUR_FOLDER` variables.
 - `nvqNb`: Same as `nvq`, but it doesn't block your terminal.
-- `nvd`: Executes `neovide` with flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_FOLDER` variables.
+- `nvd`: Executes `neovide` with flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_CUR_FOLDER` variables.
 
 ## Settings
 
 - `SF_NV_FLAGS_FILES`: Flags to pass to functions of [`neovim`](/plugins/neovim/) and `neovim_gui` plugins when receive files as arguments.
-- `SG_NV_FLAGS_FOLDER`: Flags to pass to functions of [`neovim`](/plugins/neovim/) and `neovim_gui` plugins when receive a folder as argument.
+- `SF_NV_FLAGS_CUR_FOLDER`: Flags to pass to functions of [`neovim`](/plugins/neovim/) and `neovim_gui` plugins when receive  current folder (".") or nothing as argument.
 
 ## Related software configuration
 
