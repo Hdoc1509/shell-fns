@@ -12,7 +12,7 @@ export SF_PLUGINS=(... neovim)
 
 | Alias | Description                                                                          |
 | ----- | ------------------------------------------------------------------------------------ |
-| nvCfg | Change directory to `~/.config/nvim` and open editor setted in `SF_EDITOR` variable. |
+| nvCf  | Change directory to `~/.config/nvim` and open editor setted in `SF_EDITOR` variable. |
 
 ## Functions
 
@@ -21,7 +21,7 @@ export SF_PLUGINS=(... neovim)
 ## Settings
 
 - `SF_NV_FLAGS_FILES`: Flags to pass to functions of `neovim` and [neovim_gui](/plugins/neovim_gui/) plugins when receive files as arguments.
-- `SG_NV_FLAGS_FOLDER`: Flags to pass to functions of `neovim` and [neovim_gui](/plugins/neovim_gui/) plugins when receive a folder as argument.
+- `SF_NV_FLAGS_CUR_FOLDER`: Flags to pass to functions of `neovim` and [neovim_gui](/plugins/neovim_gui/) plugins when receive current folder (".") or nothing as argument.
 
 ## Related software configuration
 
