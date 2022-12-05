@@ -6,7 +6,7 @@
 
 nv_flag () {
   if [[ "$1" == '.' || "$#" -eq 0 ]]; then
-    echo "${SF_NV_FLAGS_FOLDER} ."
+    echo "${SF_NV_FLAGS_CUR_FOLDER} ."
   else
     echo "${SF_NV_FLAGS_FILES} -p $*"
   fi
