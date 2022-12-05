@@ -23,6 +23,5 @@ nv () {
 # ALIASES
 #
 
-if [[ -n "$SF_EDITOR" ]]; then
-  alias nvCfg='cd ~/.config/nvim; ${SF_EDITOR} .'
-fi
+# shellcheck disable=SC2139
+[[ -n "$SF_EDITOR" ]] && alias nvCf="cd ~/.config/nvim; ${SF_EDITOR} ."
