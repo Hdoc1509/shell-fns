@@ -20,4 +20,4 @@ else
   done
 fi
 
-if [[ "$SF_START_DEV_FOLDER" == 'true' ]]; then dev; fi
+[[ -n "$SF_DEV_FOLDER" && "$SF_START_DEV_FOLDER" == 'true' ]] && dev
