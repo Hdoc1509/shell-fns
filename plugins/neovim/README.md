@@ -16,7 +16,7 @@ export SF_PLUGINS=(... neovim)
 
 ## Functions
 
-- `nv`: Same as executes `nvim`, but it will execute `winpty` if you are using a `msys` terminal. Also it will receive flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_FOLDER` variables.
+- `nv`: Same as executes `nvim`, but it will execute `winpty` if you are using a `msys` terminal. Also it will receive flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_CUR_FOLDER` variables.
 
 ## Settings
 
