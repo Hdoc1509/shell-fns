@@ -12,12 +12,9 @@ nv_flag () {
   fi
 }
 
-nv () {
-  local to_execute=""
-  to_execute="$([[ "$OSTYPE" == 'msys' ]] && echo "winpty nvim" || echo "nvim")"
+[[ "$OSTYPE" == 'msys' ]] && __nvim='winpty nvim' || __nvim='nvim'
 
-  eval "${to_execute} $(nv_flag "$@")"
-}
+nv () { eval "${__nvim} $(nv_flag "$@")"; }
 
 #
 # ALIASES
