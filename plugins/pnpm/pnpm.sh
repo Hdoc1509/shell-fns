@@ -4,7 +4,6 @@
 # ALIASES
 #
 
-if [[ "$OSTYPE" == 'msys' ]]; then alias pnpm='winpty pnpm.cmd'; fi
 alias pnpmA='pnpm add'
 alias pnpmD='pnpm add -D'
 alias pnpmDE='pnpm add -D -E'
