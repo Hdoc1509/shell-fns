@@ -4,7 +4,7 @@
 # FUNCTIONS
 #
 
-__sf_nv_flag () {
+__sf_nv_flag() {
   if [[ "$1" == '.' || "$#" -eq 0 ]]; then
     echo "${SF_NV_FLAGS_CUR_FOLDER} ."
   else
@@ -12,9 +12,13 @@ __sf_nv_flag () {
   fi
 }
 
-[[ "$OSTYPE" == 'msys' ]] && __nvim='winpty nvim' || __nvim='nvim'
+if [[ "$OSTYPE" == 'msys' && "$TERM_PROGRAM" == 'mintty' ]]; then
+  __nvim='winpty nvim'
+else
+  __nvim='nvim'
+fi
 
-nv () { eval "${__nvim} $(__sf_nv_flag "$@")"; }
+nv() { eval "${__nvim} $(__sf_nv_flag "$@")"; }
 
 #
 # ALIASES
