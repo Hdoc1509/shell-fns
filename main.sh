@@ -2,8 +2,10 @@
 
 export SF_PATH=~/.config/shell-fns
 export SF_PLUGINS_PATH=$SF_PATH/plugins
+export SF_WARNS=()
 
 source "$SF_PATH"/colors.sh
+source "$SF_PATH"/utils.sh
 
 if [[ -z "$SF_EDITOR" ]]; then
   echo -e "${orange}Warning: SF_EDITOR is unset${nocolor}"
@@ -25,5 +27,7 @@ else
     fi
   done
 fi
+
+[[ "${#SF_WARNS[@]}" -gt 0 ]] && __sf_show_warns
 
 [[ -n "$SF_DEV_FOLDER" && "$SF_START_DEV_FOLDER" == 'true' ]] && dev
