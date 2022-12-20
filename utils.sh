@@ -17,3 +17,16 @@ source_files_in () {
   done
 }
 
+__sf_show_warns () {
+  echo -ne "${lightblue}"
+  echo "      _          _ _       __            "
+  echo "  ___| |__   ___| | |     / _|_ __  ___  "
+  echo " / __| '_ \ / _ \ | |____| |_| '_ \/ __| "
+  echo " \__ \ | | |  __/ | |____|  _| | | \__ \ "
+  echo " |___/_| |_|\___|_|_|    |_| |_| |_|___/ "
+  echo -e "${nocolor}"
+
+  for warn_message in "${SF_WARNS[@]}"; do
+    echo -e "${lightred}Warning: ${yellow}$warn_message${nocolor}"
+  done
+}
