@@ -10,9 +10,9 @@ source_files_in () {
   for file in "$folder"/*.sh; do
     if [[ -f $file ]]; then
       echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}${prefix}/${file##*/}${nocolor} ... "
-      source "$file" && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
+      source "$file" && echo -e "${lightgreen}done" || echo -e "${lightred}FAILED"
     else
-      echo "${orange}Warning: Some problem with \"$file\""
+      echo "${lightred}Error: File \"$file\" doesn't exists in ${folder}"
     fi
   done
 }
