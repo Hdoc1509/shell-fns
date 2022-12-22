@@ -42,3 +42,9 @@ __sf_show_warns () {
     echo -e "${lightred}Warning: ${yellow}$warn_message${nocolor}"
   done
 }
+
+__sf_show_plugin_aliases() {
+  local plugin=$1
+
+  grep -e "|" --color=never "$SF_PLUGINS_PATH"/"$plugin"/README.md
+}
