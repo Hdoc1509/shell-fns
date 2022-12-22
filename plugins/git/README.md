@@ -1,6 +1,6 @@
 # git plugin
 
-The `git` plugin provides some [aliases](#aliases) for git.
+The `git` plugin provides some [aliases](#aliases) and [functions](#functions) for git.
 
 To use it, add `git` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -16,11 +16,15 @@ export SF_PLUGINS=(... git)
 | gaa   | git add --all              |
 | gc    | git commit                 |
 | gcm   | git commit -m              |
+| gca   | git commit --ammend        |
 | gcam  | git commit --amend -m      |
 | gcf   | git config                 |
 | gcfl  | git config --list          |
 | gcfg  | git config --global        |
 | gcfgl | git config --global --list |
+| gco   | git checkout               |
+| gcob  | git checkout -b            |
+| gcoM  | git checkout master        |
 | gd    | git diff                   |
 | gdom  | git diff origin/master     |
 | gf    | git fetch                  |
@@ -48,3 +52,7 @@ export SF_PLUGINS=(... git)
 | gtl   | git tag --list             |
 
 **NOTE:** For use `go` alias you will need to install [`git-open`](https://github.com/paulirish/git-open#installation)
+
+## Functions
+
+- `git_aliases`: Show all aliases of `git` plugin.
