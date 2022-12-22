@@ -17,6 +17,14 @@ source_files_in () {
   done
 }
 
+is_bin_in_path () {
+  if [[ -n "$ZSH_VERSION" ]]; then
+    builtin whence -p "$1" &> /dev/null
+  else # bash
+    builtin type -P "$1" &> /dev/null
+  fi
+}
+
 __sf_message_title() {
   echo -ne "${lightblue}"
   echo "      _          _ _       __            "
