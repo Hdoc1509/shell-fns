@@ -7,7 +7,6 @@
 # shellcheck disable=SC2139
 [[ -n "$SF_EDITOR" ]] && alias wtCf="cd ~/.config/wezterm; ${SF_EDITOR} ."
 
-[[ "$OSTYPE" == 'msys' ]] && alias wezterm='winpty wezterm.exe'
 alias wt='wezterm'
 
 alias wts='wezterm start'
