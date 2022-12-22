@@ -1,6 +1,12 @@
 #!/bin/bash
 
 #
+# FUNCTIONS
+#
+
+git_aliases() { __sf_show_plugin_aliases "git"; }
+
+#
 # ALIASES
 #
 
