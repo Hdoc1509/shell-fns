@@ -32,8 +32,7 @@ alias wtskkt='wezterm show-keys --key-table'
 alias wtsc='wezterm shell-completion'
 alias wtscs='wezterm shell-completion --shell'
 
-alias wth='wezterm --help'
-alias wtH='wezterm help'
+alias wth='wezterm help'
 alias wtsk='wezterm --skip-config'
 alias wtV='wezterm --version'
 
