@@ -29,7 +29,7 @@ alias wtsk='wezterm show-keys'
 alias wtskl='wezterm show-keys --lua'
 alias wtskt='wezterm show-keys --key-table'
 
-alias wtshc='wezterm shell-completion'
+alias wtshc='wezterm shell-completion --shell'
 
 alias wth='wezterm help'
 alias wtsk='wezterm --skip-config'
