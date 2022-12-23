@@ -23,7 +23,7 @@ alias wtlf='wezterm ls-fonts'
 alias wtlfl='wezterm ls-fonts --list-system'
 alias wtlft='wezterm ls-fonts --text'
 alias wtlfc='wezterm ls-fonts --codepoints'
-alias wtlfr='wezterm ls-fonts --rasterize-ascii'
+alias wtlfrt='wezterm ls-fonts --rasterize-ascii --text'
 
 alias wtsk='wezterm show-keys'
 alias wtskl='wezterm show-keys --lua'
