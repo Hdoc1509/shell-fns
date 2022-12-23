@@ -20,10 +20,10 @@ alias wtse='wezterm serial'
 alias wtco='wezterm connect'
 
 alias wtlf='wezterm ls-fonts'
-alias wtlfls='wezterm ls-fonts --list-system'
+alias wtlfl='wezterm ls-fonts --list-system'
 alias wtlft='wezterm ls-fonts --text'
-alias wtlfcp='wezterm ls-fonts --codepoints'
-alias wtlfra='wezterm ls-fonts --rasterize-ascii'
+alias wtlfc='wezterm ls-fonts --codepoints'
+alias wtlfr='wezterm ls-fonts --rasterize-ascii'
 
 alias wtsk='wezterm show-keys'
 alias wtskl='wezterm show-keys --lua'
