@@ -27,7 +27,7 @@ alias wtlfra='wezterm ls-fonts --rasterize-ascii'
 
 alias wtsk='wezterm show-keys'
 alias wtskl='wezterm show-keys --lua'
-alias wtskkt='wezterm show-keys --key-table'
+alias wtskt='wezterm show-keys --key-table'
 
 alias wtshc='wezterm shell-completion'
 
