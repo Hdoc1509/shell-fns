@@ -25,13 +25,11 @@ source ~/.config/shell-fns/main.sh
 
 ### Plugins
 
-- [cmd_line](/plugins/cmd_line/)
 - [dev](/plugins/dev/)
 - [git](/plugins/git/)
 - [neovim](/plugins/neovim/)
 - [neovim_gui](/plugins/neovim_gui/)
 - [npm](/plugins/npm/)
-- [npm_check_updates](/plugins/npm_check_updates/)
 - [nvm](/plugins/nvm/)
 - [pip](/plugins/pip/)
 - [pnpm](/plugins/pnpm/)
