@@ -25,7 +25,6 @@ source ~/.config/shell-fns/main.sh
 
 ### Plugins
 
-- [dev](/plugins/dev/)
 - [git](/plugins/git/)
 - [neovim](/plugins/neovim/)
 - [neovim_gui](/plugins/neovim_gui/)
