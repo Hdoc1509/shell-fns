@@ -18,7 +18,6 @@ vite () {
   elif [[ "$node_v" =~ ^v1[5-9] ]]; then
     npm create vite "$2" -- --template "$1"
   else
-    # shellcheck disable=SC2154
-    echo -e "${red}ERROR: ${orange}Node ${node_v} doesn't support vitejs${nocolor}"
+    echo -e "${RED}ERROR: ${ORANGE}Node ${node_v} doesn't support vitejs${NOCOLOR}"
   fi
 }
