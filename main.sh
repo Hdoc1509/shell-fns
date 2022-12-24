@@ -8,19 +8,19 @@ source "$SF_PATH"/colors.sh
 source "$SF_PATH"/utils.sh
 
 if [[ -z "$SF_EDITOR" ]]; then
-  echo -e "${orange}Warning: SF_EDITOR is unset${nocolor}"
+  echo -e "${ORANGE}Warning: SF_EDITOR is unset${NOCOLOR}"
 else
   # shellcheck disable=SC2139
   alias sfCf="cd ${SF_PATH}; ${SF_EDITOR} ."
 fi
 
 if [[ -z "$SF_PLUGINS" || "${#SF_PLUGINS[@]}" == '0' ]]; then
-  echo -e "${orange}Warning: No plugins selected${nocolor}"
+  echo -e "${ORANGE}Warning: No plugins selected${NOCOLOR}"
 else
   for plugin in "${SF_PLUGINS[@]}"; do
     plugin_dir="$SF_PLUGINS_PATH"/"$plugin"
     if ! [[ -d "$plugin_dir" ]]; then
-      echo -e "${lightred}Error: Plugin \"$plugin\" doesn't exists${nocolor}"
+      echo -e "${LIGHTRED}Error: Plugin \"$plugin\" doesn't exists${NOCOLOR}"
     else
       # shellcheck disable=SC1090
       source "$plugin_dir"/"$plugin".sh

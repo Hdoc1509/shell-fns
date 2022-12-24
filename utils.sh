@@ -9,10 +9,10 @@ source_files_in () {
 
   for file in "$folder"/*.sh; do
     if [[ -f $file ]]; then
-      echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}${prefix}/${file##*/}${nocolor} ... "
-      source "$file" && echo -e "${lightgreen}done" || echo -e "${lightred}FAILED"
+      echo -ne "${LIGHTPURPLE}Sourcing${NOCOLOR} ${LIGHTCYAN}${prefix}/${file##*/}${NOCOLOR} ... "
+      source "$file" && echo -e "${LIGHTGREEN}done" || echo -e "${LIGHTRED}FAILED"
     else
-      echo "${lightred}Error: File \"$file\" doesn't exists in ${folder}"
+      echo "${LIGHTRED}Error: File \"$file\" doesn't exists in ${folder}"
     fi
   done
 }
@@ -26,20 +26,20 @@ is_bin_in_path () {
 }
 
 __sf_message_title() {
-  echo -ne "${lightblue}"
+  echo -ne "${LIGHTBLUE}"
   echo "      _          _ _       __            "
   echo "  ___| |__   ___| | |     / _|_ __  ___  "
   echo " / __| '_ \ / _ \ | |____| |_| '_ \/ __| "
   echo " \__ \ | | |  __/ | |____|  _| | | \__ \ "
   echo " |___/_| |_|\___|_|_|    |_| |_| |_|___/ "
-  echo -e "${nocolor}"
+  echo -e "${NOCOLOR}"
 }
 
 __sf_show_warns () {
   __sf_message_title
 
   for warn_message in "${SF_WARNS[@]}"; do
-    echo -e "${lightred}Warning: ${yellow}$warn_message${nocolor}"
+    echo -e "${LIGHTRED}Warning: ${YELLOW}$warn_message${NOCOLOR}"
   done
 }
 
