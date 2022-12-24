@@ -4,7 +4,7 @@
 # FUNCTIONS
 #
 
-vite () {
+vitejs () {
   local node_v="";
 
   if [[ "$OSTYPE" == 'msys' ]]; then
