@@ -38,7 +38,7 @@ source ~/.config/shell-fns/main.sh
 
 | Alias | Description                                                                              |
 | ----- | ---------------------------------------------------------------------------------------- |
-| sfCfg | Change directory to `~/.config/shell-fns` and open editor setted in `SF_EDITOR` variable |
+| sfCf  | Change directory to `~/.config/shell-fns` and open editor setted in `SF_EDITOR` variable |
 
 ### Global variables
 
