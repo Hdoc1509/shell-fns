@@ -29,5 +29,3 @@ else
 fi
 
 [[ "${#SF_WARNS[@]}" -gt 0 ]] && __sf_show_warns
-
-[[ -n "$SF_DEV_FOLDER" && "$SF_START_DEV_FOLDER" == 'true' ]] && dev
