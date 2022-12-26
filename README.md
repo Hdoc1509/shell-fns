@@ -17,8 +17,7 @@ plugins in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
 export SF_EDITOR='subl'
-export SF_DEV_FOLDER='/d/Dev'
-export SF_PLUGINS=( dev git npm pip cmd_line )
+export SF_PLUGINS=( git npm pip )
 
 source ~/.config/shell-fns/main.sh
 ```
