@@ -52,28 +52,26 @@ These variables are required and are used by some plugins:
 You can print colored messages with `echo -e`:
 
 ```sh
-echo -e "Message in ${red}red color${nocolor} and in ${green}green color${nocolor}"
+echo -e "Message in ${RED}red color${NOCOLOR} and in ${GREEN}green color${NOCOLOR}"
 ```
 
-Be sure to use `${nocolor}` for reset color in your printed message and at the end of the message.
+Be sure to use `${NOCOLOR}` for reset color in your printed message and at the end of the message.
 
 Available colors:
 
-- `nocolor`
-- `red`
-- `green`
-- `orange`
-- `blue`
-- `purple`
-- `cyan`
-- `lightgray`
-- `darkgray`
-- `lightred`
-- `lightgreen`
-- `yellow`
-- `lightblue`
-- `lightpurple`
-- `lightcyan`
-- `white`
-
-Colors were taken from [jonsuh/.bash_profile](https://gist.github.com/jonsuh/3c89c004888dfc7352be)
+- `NOCOLOR`
+- `RED`
+- `GREEN`
+- `ORANGE`
+- `BLUE`
+- `PURPLE`
+- `CYAN`
+- `LIGHTGRAY`
+- `DARKGRAY`
+- `LIGHTRED`
+- `LIGHTGREEN`
+- `YELLOW`
+- `LIGHTBLUE`
+- `LIGHTPURPLE`
+- `LIGHTCYAN`
+- `WHITE`
