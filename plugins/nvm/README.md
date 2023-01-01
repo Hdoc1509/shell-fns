@@ -52,7 +52,7 @@ export SF_PLUGINS=(... nvm)
 | nvmvrlts  | nvm version-remote --lts               |
 | nvmvrltsn | nvm version-remote --lts=              |
 | nvmd      | nvm deactivate                         |
-| nvmds     | nvm deactivete --silent                |
+| nvmds     | nvm deactivate --silent                |
 | nvma      | nvm alias                              |
 | nvmanc    | nvm alias --no-colors                  |
 | nvmua     | nvm unalias                            |
