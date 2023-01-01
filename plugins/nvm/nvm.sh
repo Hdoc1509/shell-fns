@@ -54,7 +54,7 @@ alias nvmvrlts='nvm version-remote --lts'
 alias nvmvrltsn='nvm version-remote --lts='
 
 alias nvmd='nvm deactivate'
-alias nvmds='nvm deactivete --silen'
+alias nvmds='nvm deactivate --silent'
 
 alias nvma='nvm alias'
 alias nvmanc='nvm alias --no-colors'
