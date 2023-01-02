@@ -25,6 +25,10 @@ is_bin_in_path () {
   fi
 }
 
+is_mintty_term () {
+  [[ "$OSTYPE" == 'msys' && "$TERM_PROGRAM" == 'mintty' ]]
+}
+
 __sf_message_title() {
   echo -ne "${LIGHTBLUE}"
   echo "      _          _ _       __            "
