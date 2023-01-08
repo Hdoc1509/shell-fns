@@ -12,7 +12,7 @@ __sf_nv_flag() {
   fi
 }
 
-if [[ "$OSTYPE" == 'msys' && "$TERM_PROGRAM" == 'mintty' ]]; then
+if is_mintty_term; then
   __nvim='winpty nvim'
 else
   __nvim='nvim'
