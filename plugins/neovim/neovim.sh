@@ -26,3 +26,4 @@ nv() { eval "${__nvim} $(__sf_nv_flag "$@")"; }
 
 # shellcheck disable=SC2139
 [[ -n "$SF_EDITOR" ]] && alias nvCf="cd ~/.config/nvim; ${SF_EDITOR} ."
+alias nvnorc='nvim -u NORC'
