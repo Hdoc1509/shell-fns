@@ -1,5 +1,7 @@
 #!/bin/bash
 
+__nvim='nvim'
+
 #
 # FUNCTIONS
 #
@@ -12,11 +14,7 @@ __sf_nv_flag() {
   fi
 }
 
-if is_mintty_term; then
-  __nvim='winpty nvim'
-else
-  __nvim='nvim'
-fi
+is_mintty_term && __nvim='winpty nvim'
 
 nv() { eval "${__nvim} $(__sf_nv_flag "$@")"; }
 
