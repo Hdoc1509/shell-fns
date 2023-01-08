@@ -13,10 +13,11 @@ export SF_PLUGINS=(... neovim)
 | Alias | Description                                                                          |
 | ----- | ------------------------------------------------------------------------------------ |
 | nvCf  | Change directory to `~/.config/nvim` and open editor setted in `SF_EDITOR` variable. |
+| nvorc | nvim -u NORC                                                                         |
 
 ## Functions
 
-- `nv`: Same as executes `nvim`, but it will execute `winpty` if you are using a `msys` terminal. Also it will receive flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_CUR_FOLDER` variables.
+- `nv`: Same as executes `nvim`, but it will use `winpty` on `mintty` terminal. Also it will receive flags setted in `SF_NV_FLAGS_FILES` and `SF_NV_FLAGS_CUR_FOLDER` variables.
 
 ## Settings
 
