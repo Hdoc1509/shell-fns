@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if ! is_bin_in_path gh; then
+  SF_WARNS+=("gh binary is not installed or is not in your PATH"); return
+fi
+
 #
 # ALIASES
 #
