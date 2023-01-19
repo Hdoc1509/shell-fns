@@ -8,7 +8,7 @@ source "$SF_PATH"/colors.sh
 source "$SF_PATH"/utils.sh
 
 if [[ -z "$SF_EDITOR" ]]; then
-  echo -e "${ORANGE}Warning: SF_EDITOR is unset${NOCOLOR}"
+  SF_WARNS+=("SF_EDITOR is not set")
 else
   # shellcheck disable=SC2139
   alias sfCf="cd ${SF_PATH}; ${SF_EDITOR} ."
