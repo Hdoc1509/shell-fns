@@ -30,6 +30,8 @@ alias ghcfg='gh config get'
 alias ghcfl='gh config list'
 alias ghcfs='gh config set'
 
+alias ghh='gh help'
+
 alias ghst='gh status'
 alias ghste='gh status --exclude'
 alias ghsto='gh status --org'

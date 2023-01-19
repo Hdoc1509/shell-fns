@@ -33,6 +33,7 @@ export SF_PLUGINS=(... gh)
 | ghcfg   | gh config get               |
 | ghcfl   | gh config list              |
 | ghcfs   | gh config set               |
+| ghh     | gh help                     |
 | ghst    | gh status                   |
 | ghste   | gh status --exclude         |
 | ghsto   | gh status --org             |
