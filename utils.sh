@@ -47,6 +47,10 @@ __sf_show_warns () {
   done
 }
 
+__sf_missing_binary_message() {
+  echo "${1} not found. Please install it before use this plugin."
+}
+
 __sf_show_plugin_aliases() {
   local plugin=$1
 
