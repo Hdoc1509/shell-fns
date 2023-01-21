@@ -1,6 +1,6 @@
 # gh_issue plugin
 
-The `gh_issue` plugin provides [aliases](#aliases) for the command `gh issue` of `github cli`.
+The `gh_issue` plugin provides [aliases](#aliases) and [functions](#functions)  for the command `gh issue` of `github cli`.
 
 To use it, add `gh_issue` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -47,3 +47,7 @@ export SF_PLUGINS=(... gh_issue)
 | ghiv   | gh issue view                |
 | ghivc  | gh issue view --comments     |
 | ghivw  | gh issue view --web          |
+
+## Functions
+
+- `gh_issue_aliases`: Show all aliases of `gh_issue` plugin.
