@@ -5,6 +5,11 @@ if ! is_bin_in_path gh; then
   return
 fi
 
+if [[ $GH_PLUGIN_SOURCED != true ]]; then
+  SF_WARNS+=("[gh_issue plugin]: $(__sf_missing_plugin_message 'gh')")
+  return
+fi
+
 #
 # FUNCTIONS
 #
@@ -14,8 +19,6 @@ gh_issue_aliases() { _sf_show_plugin_aliases 'gh_issue'; }
 #
 # ALIASES
 #
-
-is_mintty_term && alias gh='winpt gh'
 
 alias ghi='gh issue'
 
