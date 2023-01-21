@@ -6,6 +6,11 @@
 
 gh_issue_aliases() { _sf_show_plugin_aliases 'gh_issue'; }
 
+if ! is_bin_in_path gh; then
+  SF_WARNS+=("[gh_issue plugin]: $(__sf_missing_binary_message 'gh')")
+  return
+fi
+
 #
 # ALIASES
 #
