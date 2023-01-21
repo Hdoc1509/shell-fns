@@ -1,6 +1,6 @@
 # gh plugin
 
-The `gh` plugin provides some [aliases](#aliases) for commands `gh auth`, `gh browse`, `gh config`, `gh status` and `gh workflow` of `github cli`.
+The `gh` plugin provides some [aliases](#aliases) and [functions](#functions) for commands `gh auth`, `gh browse`, `gh config`, `gh status` and `gh workflow` of `github cli`.
 
 To use it, add `gh` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -48,3 +48,7 @@ export SF_PLUGINS=(... gh)
 | ghwv    | gh workflow view            |
 | ghwvw   | gh workflow view --web      |
 | ghwvy   | gh workflow view --yaml     |
+
+## Functions
+
+- `gh_aliases`: Show all aliases of `gh` plugin.
