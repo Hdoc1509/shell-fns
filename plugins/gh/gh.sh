@@ -17,17 +17,17 @@ fi
 
 is_mintty_term && alias gh='winpty gh'
 
-alias ghau='gh auth'
+alias gha='gh auth'
 alias ghli='gh auth login'
 alias ghlih='gh auth login --hostname'
 alias ghliw='gh auth login --web'
 alias ghlo='gh auth logout'
 alias ghloh='gh auth logout --hostname'
-alias ghaust='gh auth status'
-alias ghausth='gh auth status --hostname'
-alias ghaustt='gh auth status --show-token'
-alias ghautk='gh auth token'
-alias ghautkh='gh auth token --hostname'
+alias ghast='gh auth status'
+alias ghasth='gh auth status --hostname'
+alias ghastt='gh auth status --show-token'
+alias ghatk='gh auth token'
+alias ghatkh='gh auth token --hostname'
 
 alias ghb='gh browse'
 alias ghbc='gh browse --commit'
