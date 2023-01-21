@@ -2,10 +2,10 @@
 
 The `gh_gist` plugin provides some [aliases](#aliases) and [functions](#functions)  for the command `gh gist` of `github cli`.
 
-To use it, add `gh_gist` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
+To use it, add  `gh` and `gh_gist` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
-export SF_PLUGINS=(... gh_gist)
+export SF_PLUGINS=(... gh gh_gist)
 ```
 
 ## Aliases
