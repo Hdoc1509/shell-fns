@@ -40,10 +40,10 @@ __sf_message_title() {
 }
 
 __sf_show_warns () {
-  __sf_message_title
+  echo -e "${LIGHTRED}[ SHELL-FNS ]: WARNING MESSAGES${NOCOLOR}"
 
   for warn_message in "${SF_WARNS[@]}"; do
-    echo -e "${LIGHTRED}Warning: ${YELLOW}$warn_message${NOCOLOR}"
+    echo -e "${YELLOW}$warn_message${NOCOLOR}"
   done
 }
 
