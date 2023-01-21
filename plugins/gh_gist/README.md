@@ -1,6 +1,6 @@
 # gh_gist plugin
 
-The `gh_gist` plugin provides some [aliases](#aliases) for the command `gh gist` of `github cli`.
+The `gh_gist` plugin provides some [aliases](#aliases) and [functions](#functions)  for the command `gh gist` of `github cli`.
 
 To use it, add `gh_gist` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -27,3 +27,7 @@ export SF_PLUGINS=(... gh_gist)
 | ghgvf  | gh gist view --files    |
 | ghgvr  | gh gist view --raw      |
 | ghgvw  | gh gist view --web      |
+
+## Functions
+
+- `gh_gist_aliases`: Show all aliases of `gh_gist` plugin.
