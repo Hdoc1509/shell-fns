@@ -41,6 +41,10 @@ __sf_missing_binary_message() {
   echo "${1} not found. Please install it before use this plugin."
 }
 
+__sf_missing_plugin_message() {
+  echo "${1} plugin is not enabled. Please enable it before use this plugin."
+}
+
 __sf_show_plugin_aliases() {
   grep -e "|" --color=never "${SF_PLUGINS_PATH}"/"${1}"/README.md
 }
