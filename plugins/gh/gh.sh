@@ -1,7 +1,8 @@
 #!/bin/bash
 
 if ! is_bin_in_path gh; then
-  SF_WARNS+=("gh binary is not installed or is not in your PATH"); return
+  SF_WARNS+=("[gh plugin]: $(__sf_missing_binary_message 'gh')")
+  return
 fi
 
 #
