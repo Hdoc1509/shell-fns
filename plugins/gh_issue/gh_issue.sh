@@ -4,7 +4,7 @@
 # ALIASES
 #
 
-if [[ "$OSTYPE" == 'msys' ]]; then alias gh='winpty gh'; fi
+is_mintty_term && alias gh='winpt gh'
 
 alias ghi='gh issue'
 
