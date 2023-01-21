@@ -42,7 +42,5 @@ __sf_missing_binary_message() {
 }
 
 __sf_show_plugin_aliases() {
-  local plugin=$1
-
-  grep -e "|" --color=never "$SF_PLUGINS_PATH"/"$plugin"/README.md
+  grep -e "|" --color=never "${SF_PLUGINS_PATH}"/"${1}"/README.md
 }
