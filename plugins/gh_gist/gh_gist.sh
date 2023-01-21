@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#
-# FUNCTIONS
-#
-
-gh_gist_aliases() { __sf_show_plugin_aliases 'gh_gist'; }
-
 if ! is_bin_in_path gh; then
   SF_WARNS+=("[gh_gist plugin]: $(__sf_missing_binary_message 'gh')")
   return
@@ -15,6 +9,12 @@ if [[ $GH_PLUGIN_SOURCED != true ]]; then
   SF_WARNS+=("[gh_gist plugin]: $(__sf_missing_plugin_message 'gh')")
   return
 fi
+
+#
+# FUNCTIONS
+#
+
+gh_gist_aliases() { __sf_show_plugin_aliases 'gh_gist'; }
 
 #
 # ALIASES
