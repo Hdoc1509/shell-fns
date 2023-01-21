@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export GH_PLUGIN_SOURCED=true
+
 #
 # FUNCTIONS
 #
