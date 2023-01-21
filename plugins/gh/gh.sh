@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#
+# FUNCTIONS
+#
+
+gh_aliases() { __sf_show_plugin_aliases 'gh'; }
+
 if ! is_bin_in_path gh; then
   SF_WARNS+=("[gh plugin]: $(__sf_missing_binary_message 'gh')")
   return
