@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! is_bin_in_path gh; then
+  SF_WARNS+=("[gh_issue plugin]: $(__sf_missing_binary_message 'gh')")
+  return
+fi
+
 #
 # ALIASES
 #
