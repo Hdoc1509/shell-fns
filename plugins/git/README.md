@@ -44,6 +44,7 @@ export SF_PLUGINS=(... git)
 | gp    | git push                   |
 | gpl   | git pull                   |
 | grm   | git rm                     |
+| grmr  | git rm -r                  |
 | grs   | git restore                |
 | grss  | git restore --staged       |
 | grt   | git reset                  |
