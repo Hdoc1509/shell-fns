@@ -8,6 +8,10 @@ To use it, add `git` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 export SF_PLUGINS=(... git)
 ```
 
+## Requirements
+
+- [`git-open`](https://github.com/paulirish/git-open#installation)
+
 ## Aliases
 
 | Alias | Command                    |
@@ -52,8 +56,6 @@ export SF_PLUGINS=(... git)
 | gta   | git tag --annotate         |
 | gtd   | git tag --delete           |
 | gtl   | git tag --list             |
-
-**NOTE:** For use `go` alias you will need to install [`git-open`](https://github.com/paulirish/git-open#installation)
 
 ## Functions
 
