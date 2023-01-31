@@ -49,6 +49,7 @@ alias ghrpdkl='gh repo deploy-key list'
 
 alias ghrpe='gh repo edit'
 alias ghrpea='gh repo edit --allow-forking'
+alias ghrpeau='gh repo edit --allow-update-branch'
 alias ghrpedm='gh repo edit --delete-branch-on-merge'
 alias ghrpeam='gh repo edit --enable-auto-merge'
 alias ghrpei='gh repo edit --enable-issues'
