@@ -17,6 +17,9 @@ __sf_nv_flag() {
 is_mintty_term && __nvim='winpty nvim'
 
 nv() { eval "${__nvim} $(__sf_nv_flag "$@")"; }
+nvq () { eval "nvim-qt -- $(__sf_nv_flag "$@")"; }
+nvqNb () { nvq "$@" & /dev/null; }
+nvd () { eval "neovide --multigrid -- $(__sf_nv_flag "$@")"; }
 
 #
 # ALIASES
