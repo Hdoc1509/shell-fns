@@ -1,8 +1,8 @@
 # gh_pr plugin
 
-The `gh_pr` plugin provides [aliases](#aliases) for the command `gh pr` of `github cli`.
+The `gh_pr` plugin provides [aliases](#aliases) and [functions](#functions)  for the command `gh pr` of `github cli`.
 
-To use it, add `gh_pr` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
+To use it, add `gh` and `gh_pr` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
 export SF_PLUGINS=(... gh_pr)
@@ -75,3 +75,7 @@ export SF_PLUGINS=(... gh_pr)
 | ghpvc  | gh pr view --comments               |
 | ghpvj  | gh pr view --json                   |
 | ghpvw  | gh pr view --web                    |
+
+## Functions
+
+- `gh_pr_aliases`: Show all aliases of `gh_pr` plugin.
