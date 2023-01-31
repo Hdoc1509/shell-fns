@@ -14,7 +14,7 @@ fi
 # FUNCTIONS
 #
 
-gh_pr_aliases() { _sf_show_plugin_aliases 'gh_pr'; }
+gh_pr_aliases() { __sf_show_plugin_aliases 'gh_pr'; }
 
 #
 # ALIASES
