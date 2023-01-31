@@ -1,11 +1,11 @@
 # gh_release plugin
 
-The `gh_release` plugin provides [aliases](#aliases) for the command `gh release` of `github cli`.
+The `gh_release` plugin provides [aliases](#aliases) and [functions](#functions) for the command `gh release` of `github cli`.
 
-To use it, add `gh_release` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
+To use it, add `gh` and `gh_release` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
-export SF_PLUGINS=(... gh_release)
+export SF_PLUGINS=(... gh gh_release)
 ```
 
 ## Aliases
@@ -14,10 +14,10 @@ export SF_PLUGINS=(... gh_release)
 | ------- | ----------------------------------- |
 | ghrl    | gh release                          |
 | ghrlc   | gh release create                   |
-| ghrld   | gh release create --draft           |
-| ghrlg   | gh release create --generate-notes  |
-| ghrll   | gh release create --latest          |
-| ghrlp   | gh release create --prerelease      |
+| ghrlcd  | gh release create --draft           |
+| ghrlcg  | gh release create --generate-notes  |
+| ghrlcl  | gh release create --latest          |
+| ghrlcp  | gh release create --prerelease      |
 | ghrld   | gh release delete                   |
 | ghrldc  | gh release delete --cleanup-tag     |
 | ghrldy  | gh release delete --yes             |
@@ -35,4 +35,8 @@ export SF_PLUGINS=(... gh_release)
 | ghrlu   | gh release upload                   |
 | ghrluc  | gh release upload --clobber         |
 | ghrlv   | gh release view                     |
-| ghrlvw  | gh release --web                    |
+| ghrlvw  | gh release view --web               |
+
+## Functions
+
+- `gh_release_aliases`: Show all aliases of `gh_release` plugin.
