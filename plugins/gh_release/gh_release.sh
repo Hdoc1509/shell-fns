@@ -37,4 +37,4 @@ alias ghrlu='gh release upload'
 alias ghrluc='gh release upload --clobber'
 
 alias ghrlv='gh release view'
-alias ghrlvw='gh release --web'
+alias ghrlvw='gh release view --web'
