@@ -14,7 +14,7 @@ fi
 # FUNCTIONS
 #
 
-gh_issue_aliases() { _sf_show_plugin_aliases 'gh_issue'; }
+gh_issue_aliases() { __sf_show_plugin_aliases 'gh_issue'; }
 
 #
 # ALIASES
