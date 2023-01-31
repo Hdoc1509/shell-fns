@@ -28,8 +28,10 @@ export SF_PLUGINS=(... git)
 | gd    | git diff                   |
 | gdom  | git diff origin/master     |
 | gf    | git fetch                  |
+| gH    | git help                   |
 | gi    | git init                   |
 | gl    | git log                    |
+| glfp  | git log --follow -p        |
 | gln   | git log -n                 |
 | glo   | git log --oneline          |
 | glon  | git log --oneline -n       |
