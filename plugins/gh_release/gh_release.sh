@@ -9,10 +9,10 @@ if [[ "$OSTYPE" == 'msys' ]]; then alias gh='winpty gh'; fi
 alias ghrl='gh release'
 
 alias ghrlc='gh release create'
-alias ghrld='gh release create --draft'
-alias ghrlg='gh release create --generate-notes'
-alias ghrll='gh release create --latest'
-alias ghrlp='gh release create --prerelease'
+alias ghrlcd='gh release create --draft'
+alias ghrlcg='gh release create --generate-notes'
+alias ghrlcl='gh release create --latest'
+alias ghrlcp='gh release create --prerelease'
 
 alias ghrld='gh release delete'
 alias ghrldc='gh release delete --cleanup-tag'
