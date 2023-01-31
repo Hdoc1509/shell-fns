@@ -1,6 +1,6 @@
 # gh_pr plugin
 
-The `gh_pr` plugin provides [aliases](#aliases) and [functions](#functions)  for the command `gh pr` of `github cli`.
+The `gh_pr` plugin provides [aliases](#aliases) and [functions](#functions) for the command `gh pr` of `github cli`.
 
 To use it, add `gh` and `gh_pr` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
