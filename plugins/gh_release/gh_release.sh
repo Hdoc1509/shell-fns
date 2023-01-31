@@ -11,6 +11,12 @@ if [[ $GH_PLUGIN_SOURCED != true ]]; then
 fi
 
 #
+# FUNCTIONS
+#
+
+gh_release_aliases() { __sf_show_plugin_aliases 'gh_release'; }
+
+#
 # ALIASES
 #
 
