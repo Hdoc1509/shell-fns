@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! is_bin_in_path nvim; then
+  SF_WARNS+=("[neovim plugin]: $(__sf_missing_binary_message 'nvim')")
+  return
+fi
+
 __nvim='nvim'
 
 #
