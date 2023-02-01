@@ -4,7 +4,8 @@
 # ALIASES
 #
 
-[[ "$OSTYPE" == 'msys' && "$TERM_PROGRAM" == 'mintty' ]] && alias npm='winpty npm.cmd'
+is_mintty_term && alias npm='winpty npm.cmd'
+
 alias npmD='npm i -D'
 alias npmDE='npm i -D -E'
 alias npmDev='npm run dev'
