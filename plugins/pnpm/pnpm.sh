@@ -6,6 +6,12 @@ if ! is_bin_in_path pnpm; then
 fi
 
 #
+# FUNCTIONS
+#
+
+pnpm_aliases() { __sf_show_plugin_aliases 'pnpm'; }
+
+#
 # ALIASES
 #
 
