@@ -1,6 +1,6 @@
 # nvm plugin
 
-The `nvm` plugin provides [aliases](#aliases) for `nvm`.
+The `nvm` plugin provides [aliases](#aliases) and [functions](#functions) for `nvm`.
 
 To use it, add `nvm` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -58,3 +58,7 @@ export SF_PLUGINS=(... nvm)
 | nvmua     | nvm unalias                            |
 | nvmw      | nvm which                              |
 | nvmws     | nvm which --silent                     |
+
+## Functions
+
+- `nvm_aliases`: Show all aliases of `nvm` plugin.
