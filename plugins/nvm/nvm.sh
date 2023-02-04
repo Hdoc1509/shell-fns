@@ -6,6 +6,12 @@ if ! is_bin_in_path nvm; then
 fi
 
 #
+# FUNCTIONS
+#
+
+nvm_aliases() { __sf_show_plugin_aliases 'nvm'; }
+
+#
 # ALIASES
 #
 
