@@ -1,6 +1,6 @@
 # nvm-win plugin
 
-The `nvm-win` plugin provides some [aliases](#aliases) for `nvm-windows`.
+The `nvm-win` plugin provides some [aliases](#aliases) and [functions](#functions)  for `nvm-windows`.
 
 To use it, add `nvm-win` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -31,3 +31,7 @@ export SF_PLUGINS=(... nvm-win)
 | nvmUn   | nvm use newest     |
 | nvmr    | nvm root           |
 | nvmV    | nvm version        |
+
+## Functions
+
+- `nvm_win_aliases`: Show all aliases of `nvm_win` plugin.
