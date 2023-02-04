@@ -1,6 +1,6 @@
 # npm plugin
 
-The `npm` plugin provides some [aliases](#aliases) for `npm`.
+The `npm` plugin provides some [aliases](#aliases) and [functions](#functions)  for `npm`.
 
 To use it, add `npm` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -29,3 +29,7 @@ export SF_PLUGINS=(... neovim)
 | npmT   | npm test         |
 | npmU   | npm uninstall    |
 | npmUG  | npm uninstall -g |
+
+## Functions
+
+- `npm_aliases`: Show all aliases of `npm` plugin.
