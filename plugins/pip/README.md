@@ -1,6 +1,6 @@
 # pip plugin
 
-The `pip` plugins provides some [aliases](#aliases) for `pip`.
+The `pip` plugins provides some [aliases](#aliases) and [functions](#functions)  for `pip`.
 
 To use it, add `pip` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -41,3 +41,7 @@ export SF_PLUGINS=(... pip)
 | pipuy  | pip uninstall --yes                 |
 | pipUp  | python -m pip install --upgrade pip |
 | pipV   | pip --version                       |
+
+## Functions
+
+- `pip_aliases`: Show all aliases of `pip` plugin.
