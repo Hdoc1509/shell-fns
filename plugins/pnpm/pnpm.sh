@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! is_bin_in_path pnpm; then
+  SF_WARNS+=("[pnpm plugin]: $(__sf_missing_binary_message 'pnpm')")
+  return
+fi
+
 #
 # ALIASES
 #
