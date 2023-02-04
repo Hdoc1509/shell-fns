@@ -6,6 +6,12 @@ if ! is_bin_in_path python; then
 fi
 
 #
+# FUNCTIONS
+#
+
+pip_aliases() { __sf_show_plugin_aliases 'pip'; }
+
+#
 # ALIASES
 #
 
