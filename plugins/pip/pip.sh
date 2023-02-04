@@ -9,4 +9,4 @@ fi
 # ALIASES
 #
 
-alias pipUpdate='python -m pip install --upgrade pip'
+alias pipUp='python -m pip install --upgrade pip'
