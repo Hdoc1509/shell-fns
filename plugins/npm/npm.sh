@@ -6,6 +6,12 @@ if ! is_bin_in_path node; then
 fi
 
 #
+# FUNCTIONS
+#
+
+npm_aliases() { __sf_show_plugin_aliases 'npm'; }
+
+#
 # ALIASES
 #
 
