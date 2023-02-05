@@ -5,24 +5,33 @@ if ! is_bin_in_path node; then
   return
 fi
 
+__node_v=''
+
+if [[ $OSTYPE == 'msys' ]]; then
+  __node_v=$(node.exe --version)
+else
+  __node_v=$(node --version)
+fi
+
+__node_v_mj="${__node_v:1:2}"
+__node_v_mn="${__node_v:4:2}"
+
+if ((__node_v_mj <= 13)) || { ((__node_v_mj == 14)) && ((__node_v_mn < 18)); }; then
+  SF_WARNS+=("[vitejs plugin]: Vitejs requires Node.js v14.18+ or v15+. Please upgrade your version of Node.js")
+  return
+fi
+
+__npm_v=$(npm --version)
+__npm_v_mj="${__npm_v:0:1}"
+
 #
 # FUNCTIONS
 #
 
-vitejs () {
-  local node_v="";
-
-  if [[ "$OSTYPE" == 'msys' ]]; then
-    node_v="$(node.exe --version)"
-  else
-    node_v="$(node --version)"
-  fi
-
-  if [[ "$node_v" =~ ^v14\.(1[8-9]|2[0-1]) ]]; then
+vitejs() {
+  if ((__npm_v_mj == 6)); then
     npm create vite "$2" --template "$1"
-  elif [[ "$node_v" =~ ^v1[5-9] ]]; then
-    npm create vite "$2" -- --template "$1"
   else
-    echo -e "${RED}ERROR: ${ORANGE}Node ${node_v} doesn't support vitejs${NOCOLOR}"
+    npm create vite "$2" -- --template "$1"
   fi
 }
