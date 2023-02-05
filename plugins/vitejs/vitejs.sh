@@ -21,15 +21,17 @@ if ((__node_v_mj <= 13)) || { ((__node_v_mj == 14)) && ((__node_v_mn < 18)); }; 
   return
 fi
 
-__npm_v=$(npm --version)
-__npm_v_mj="${__npm_v:0:1}"
-
 #
 # FUNCTIONS
 #
 
 vitejs() {
-  if ((__npm_v_mj == 6)); then
+  local npm_v
+
+  npm_v=$(npm --version)
+  npm_v_mj="${npm_v:0:1}"
+
+  if ((npm_v_mj == 6)); then
     npm create vite "$2" --template "$1"
   else
     npm create vite "$2" -- --template "$1"
