@@ -1,6 +1,6 @@
 # pnpm plugin
 
-The `pnpm` plugin provides [aliases](#aliases) for `pnpm`.
+The `pnpm` plugin provides [aliases](#aliases) and [functions](#functions)  for `pnpm`.
 
 To use it, add `pnpm` to plugins list in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -41,3 +41,7 @@ export SF_PLUGINS=(... pnpm)
 | pnpmUpG | pnpm update -g    |
 | pnpmUpP | pnpm update -P    |
 | pnpmV   | pnpm --version    |
+
+## Functions
+
+- `pnpm_aliases`: Show all aliases of `pnpm` plugin.
