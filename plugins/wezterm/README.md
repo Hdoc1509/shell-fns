@@ -1,6 +1,6 @@
 # wezterm plugin
 
-The `wezterm` plugin provides some [aliases](#aliases) for `wezterm` terminal.
+The `wezterm` plugin provides some [aliases](#aliases) and [functions](#functions)  for `wezterm` terminal.
 
 To use it, add `git` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -13,29 +13,33 @@ export SF_PLUGINS=(... wezterm)
 | Alias  | Command                                         |
 | ------ | ----------------------------------------------- |
 | wt     | wezterm                                         |
-| wtco   | wezterm connect                                 |
-| wth    | wezterm help                                    |
-| wtlf   | wezterm ls-fonts                                |
-| wtlfc  | wezterm ls-fonts --codepoints                   |
-| wtlfl  | wezterm ls-fonts --list-system                  |
-| wtlfrc | wezterm ls-fonts --rasterize-ascii --codepoints |
-| wtlfrt | wezterm ls-fonts --rasterize-ascii --text       |
-| wtlft  | wezterm ls-fonts --text                         |
 | wts    | wezterm start                                   |
-| wtsan  | wezterm start --always-new-process              |
 | wtsna  | wezterm start --no-auto-connect                 |
+| wtsan  | wezterm start --always-new-process              |
+| wtssh  | wezterm ssh                                     |
 | wtse   | wezterm serial                                  |
-| wtshc  | wezterm shell-completion --shell                |
+| wtco   | wezterm connect                                 |
+| wtlf   | wezterm ls-fonts                                |
+| wtlfl  | wezterm ls-fonts --list-system                  |
+| wtlft  | wezterm ls-fonts --text                         |
+| wtlfc  | wezterm ls-fonts --codepoints                   |
+| wtlfrt | wezterm ls-fonts --rasterize-ascii --text       |
+| wtlfrc | wezterm ls-fonts --rasterize-ascii --codepoints |
 | wtsk   | wezterm show-keys                               |
 | wtskl  | wezterm show-keys --lua                         |
 | wtskt  | wezterm show-keys --key-table                   |
+| wtshc  | wezterm shell-completion --shell                |
+| wth    | wezterm help                                    |
 | wtskp  | wezterm --skip-config                           |
-| wtssh  | wezterm ssh                                     |
 | wtV    | wezterm --version                               |
 
 ## Config Aliases
 
 - `wtCf`: Change directory to `~/.config/wezterm` and open editor setted in `SF_EDITOR` variable
+
+## Functions
+
+- `wezterm_aliases`: Show all aliases of `wezterm` plugin.
 
 ## Related software configuration
 
