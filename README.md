@@ -24,27 +24,42 @@ source ~/.config/shell-fns/main.sh
 
 ### Plugins
 
+- [gh](/plugins/gh/)
+- [gh_gist](/plugins/gh_gist/)
+- [gh_issue](/plugins/gh_issue/)
+- [gh_pr](/plugins/gh_pr/)
+- [gh_release](/plugins/gh_release/)
+- [gh_repo](/plugins/gh_repo)
 - [git](/plugins/git/)
 - [neovim](/plugins/neovim/)
-- [neovim_gui](/plugins/neovim_gui/)
 - [npm](/plugins/npm/)
 - [nvm](/plugins/nvm/)
+- [nvm_win](/plugins/nvm_win/)
 - [pip](/plugins/pip/)
 - [pnpm](/plugins/pnpm/)
+- [scoop](/plugins/scoop/)
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
 
 ### Built-in aliases
 
-| Alias | Description                                                                              |
-| ----- | ---------------------------------------------------------------------------------------- |
-| sfCf  | Change directory to `~/.config/shell-fns` and open editor setted in `SF_EDITOR` variable |
+| Alias | Command                                |
+| ----- | -------------------------------------- |
+| sfCf  | cd ~/.config/shell-fns; ${SF_EDITOR} . |
+| path  | echo -e "${PATH//:/\\n}"               |
+| mkd   | mkdir -p                               |
+| ..    | cd ..                                  |
+| .1    | cd ..                                  |
+| .2    | cd ../..                               |
+| .3    | cd ../../..                            |
+| c     | clear                                  |
+| zz    | exit                                   |
 
 ### Global variables
 
 These variables are required and are used by some plugins:
 
-- `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `nvim`. It can also be editor functions of [`neovim`](/plugins/neovim/) and [`neovim_gui`](/plugins/neovim_gui/) plugins.
+- `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `nvim`. It can also be editor functions of [`neovim`](/plugins/neovim/) plugin.
 
 ### Colored messages
 
