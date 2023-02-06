@@ -46,7 +46,7 @@ source ~/.config/shell-fns/main.sh
 | Alias | Command                                |
 | ----- | -------------------------------------- |
 | sfCf  | cd ~/.config/shell-fns; ${SF_EDITOR} . |
-| path  | echo -e "${PATH//:/\\n}"               |
+| path  | echo -e "${PATH//:/\\\n}"              |
 | mkd   | mkdir -p                               |
 | ..    | cd ..                                  |
 | .1    | cd ..                                  |
