@@ -1,6 +1,6 @@
 # pnpm plugin
 
-The `pnpm` plugin provides [aliases](#aliases) and [functions](#functions)  for `pnpm`.
+The `pnpm` plugin provides [aliases](#aliases) and [functions](#functions) for `pnpm`.
 
 To use it, add `pnpm` to plugins list in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -10,37 +10,37 @@ export SF_PLUGINS=(... pnpm)
 
 ## Aliases
 
-| Alias   | Command           |
-| ------- | ----------------- |
-| pnpmA   | pnpm add          |
-| pnpmD   | pnpm add -D       |
-| pnpmDE  | pnpm add -D -E    |
-| pnpmE   | pnpm add -E       |
-| pnpmG   | pnpm add -g       |
-| pnpmO   | pnpm add -O       |
-| pnpmi   | pnpm import       |
-| pnpmI   | pnpm install      |
-| pnpmL   | pnpm list         |
-| pnpmLD  | pnpm list -D      |
-| pnpmLG  | pnpm list -g      |
-| pnpmLP  | pnpm list -P      |
-| pnpmO   | pnpm outdated     |
-| pnpmOD  | pnpm outdated -D  |
-| pnpmOG  | pnpm outdated -g  |
-| pnpmOP  | pnpm outdated -P  |
-| pnpmR   | pnpm run          |
-| pnpmDev | pnpm run dev      |
-| pnpmS   | pnpm start        |
-| pnpmT   | pnpm test         |
-| pnpmU   | pnpm uninstall    |
-| pnpmUD  | pnpm uninstall -D |
-| pnpmUG  | pnpm uninstall -g |
-| pnpmUP  | pnpm uninstall -P |
-| pnpmUp  | pnpm update       |
-| pnpmUpD | pnpm update -D    |
-| pnpmUpG | pnpm update -g    |
-| pnpmUpP | pnpm update -P    |
-| pnpmV   | pnpm --version    |
+| Alias | Command           |
+| ----- | ----------------- |
+| pnA   | pnpm add          |
+| pnD   | pnpm add -D       |
+| pnDE  | pnpm add -D -E    |
+| pnE   | pnpm add -E       |
+| pnG   | pnpm add -g       |
+| pnO   | pnpm add -O       |
+| pni   | pnpm import       |
+| pnI   | pnpm install      |
+| pnL   | pnpm list         |
+| pnLD  | pnpm list -D      |
+| pnLG  | pnpm list -g      |
+| pnLP  | pnpm list -P      |
+| pnO   | pnpm outdated     |
+| pnOD  | pnpm outdated -D  |
+| pnOG  | pnpm outdated -g  |
+| pnOP  | pnpm outdated -P  |
+| pnR   | pnpm run          |
+| pnDev | pnpm run dev      |
+| pnS   | pnpm start        |
+| pnT   | pnpm test         |
+| pnU   | pnpm uninstall    |
+| pnUD  | pnpm uninstall -D |
+| pnUG  | pnpm uninstall -g |
+| pnUP  | pnpm uninstall -P |
+| pnUp  | pnpm update       |
+| pnUpD | pnpm update -D    |
+| pnUpG | pnpm update -g    |
+| pnUpP | pnpm update -P    |
+| pnV   | pnpm --version    |
 
 ## Functions
 
