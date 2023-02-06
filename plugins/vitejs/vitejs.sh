@@ -26,14 +26,14 @@ fi
 #
 
 vitejs() {
-  local npm_v
+  local npm_v dir_name="${2}" template="${1}"
 
   npm_v=$(npm --version)
   npm_v_mj="${npm_v:0:1}"
 
   if ((npm_v_mj == 6)); then
-    npm create vite "$2" --template "$1"
+    npm create vite@latest "${dir_name}" --template "${template}"
   else
-    npm create vite "$2" -- --template "$1"
+    npm create vite@latest "${dir_name}" -- --template "${template}"
   fi
 }
