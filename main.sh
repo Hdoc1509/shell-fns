@@ -6,13 +6,7 @@ export SF_WARNS=()
 
 source "$SF_PATH"/colors.sh
 source "$SF_PATH"/utils.sh
-
-if [[ -z "$SF_EDITOR" ]]; then
-  SF_WARNS+=("SF_EDITOR is not set")
-else
-  # shellcheck disable=SC2139
-  alias sfCf="cd ${SF_PATH}; ${SF_EDITOR} ."
-fi
+source "$SF_PATH"/aliases.sh
 
 if [[ -z "$SF_PLUGINS" || "${#SF_PLUGINS[@]}" == '0' ]]; then
   echo -e "${ORANGE}Warning: No plugins selected${NOCOLOR}"
