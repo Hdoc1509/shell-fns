@@ -37,3 +37,11 @@ vitejs() {
     npm create vite@latest "${dir_name}" -- --template "${template}"
   fi
 }
+
+#
+# ALIASES
+#
+
+alias npvi='npm create vite@latest'
+alias yavi='yarn create vite'
+alias pnvi='pnpm create vite'
