@@ -6,6 +6,12 @@ if ! is_bin_in_path wezterm; then
 fi
 
 #
+# FUNCTIONS
+#
+
+wezterm_aliases() { __sf_show_plugin_aliases 'wezterm'; }
+
+#
 # ALIASES
 #
 
