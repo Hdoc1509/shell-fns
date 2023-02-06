@@ -1,6 +1,6 @@
 # wezterm plugin
 
-The `wezterm` plugin provides some [aliases](#aliases) and [functions](#functions)  for `wezterm` terminal.
+The `wezterm` plugin provides some [aliases](#aliases) and [functions](#functions) for `wezterm` terminal.
 
 To use it, add `git` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
@@ -13,6 +13,7 @@ export SF_PLUGINS=(... wezterm)
 | Alias  | Command                                         |
 | ------ | ----------------------------------------------- |
 | wt     | wezterm                                         |
+| wtCf   | cd ~/.config/nvm; ${SF_EDITOR} .                |
 | wts    | wezterm start                                   |
 | wtsna  | wezterm start --no-auto-connect                 |
 | wtsan  | wezterm start --always-new-process              |
@@ -32,10 +33,6 @@ export SF_PLUGINS=(... wezterm)
 | wth    | wezterm help                                    |
 | wtskp  | wezterm --skip-config                           |
 | wtV    | wezterm --version                               |
-
-## Config Aliases
-
-- `wtCf`: Change directory to `~/.config/wezterm` and open editor setted in `SF_EDITOR` variable
 
 ## Functions
 
