@@ -18,6 +18,11 @@ export SF_PLUGINS=(... git)
 | ----- | -------------------------- |
 | ga    | git add                    |
 | gaa   | git add --all              |
+| gb    | git branch                 |
+| gba   | git branch --all           |
+| gbd   | git branch --delete        |
+| gbr   | git branch --remotes       |
+| gbsc  | git branch --show-current  |
 | gc    | git commit                 |
 | gcm   | git commit -m              |
 | gca   | git commit --ammend        |
@@ -42,6 +47,9 @@ export SF_PLUGINS=(... git)
 | gmv   | git mv                     |
 | go    | git open                   |
 | gp    | git push                   |
+| gpao  | git push --all origin      |
+| gpo   | git push origin            |
+| gpt   | git push --tags            |
 | gpl   | git pull                   |
 | grm   | git rm                     |
 | grmr  | git rm -r                  |
