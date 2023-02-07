@@ -13,7 +13,7 @@ export SF_PLUGINS=(... wezterm)
 | Alias  | Command                                         |
 | ------ | ----------------------------------------------- |
 | wt     | wezterm                                         |
-| wtCf   | cd ~/.config/nvm; ${SF_EDITOR} .                |
+| wtCf   | cd ~/.config/wezterm; ${SF_EDITOR} .            |
 | wts    | wezterm start                                   |
 | wtsna  | wezterm start --no-auto-connect                 |
 | wtsan  | wezterm start --always-new-process              |
