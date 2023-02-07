@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # shellcheck source=colors.sh
-source ~/.config/shell-fns/colors.sh
+source "$SF_PATH"/colors.sh
 
 source_files_in () {
   local folder=$1;
