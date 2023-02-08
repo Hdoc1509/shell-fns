@@ -3,9 +3,9 @@
 # shellcheck source=colors.sh
 source "$SF_PATH"/colors.sh
 
-source_files_in () {
-  local folder=$1;
-  local prefix=$2;
+source_files_in() {
+  local folder=$1
+  local prefix=$2
 
   for file in "$folder"/*.sh; do
     if [[ -f $file ]]; then
@@ -17,19 +17,19 @@ source_files_in () {
   done
 }
 
-is_bin_in_path () {
+is_bin_in_path() {
   if [[ -n "$ZSH_VERSION" ]]; then
-    builtin whence -p "$1" &> /dev/null
+    builtin whence -p "$1" &>/dev/null
   else # bash
-    builtin type -P "$1" &> /dev/null
+    builtin type -P "$1" &>/dev/null
   fi
 }
 
-is_mintty_term () {
+is_mintty_term() {
   [[ "$OSTYPE" == 'msys' && "$TERM_PROGRAM" == 'mintty' ]]
 }
 
-__sf_show_warns () {
+__sf_show_warns() {
   echo -e "${LIGHTRED}[ SHELL-FNS ]: WARNING MESSAGES${NOCOLOR}"
 
   for warn_message in "${SF_WARNS[@]}"; do
