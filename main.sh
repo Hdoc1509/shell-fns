@@ -1,5 +1,3 @@
-#!/bin/bash
-
 export SF_PATH=~/.shell-fns
 export SF_PLUGINS_PATH=$SF_PATH/plugins
 export SF_WARNS=()

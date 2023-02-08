@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if ! is_bin_in_path gh; then
   SF_WARNS+=("[gh_gist plugin]: $(__sf_missing_binary_message 'gh')")
   return

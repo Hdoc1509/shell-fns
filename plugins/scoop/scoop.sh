@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if ! is_bin_in_path scoop; then
   SF_WARNS+=("[scoop plugin]: $(__sf_missing_binary_message 'scoop')")
   return

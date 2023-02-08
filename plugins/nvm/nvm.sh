@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if ! is_bin_in_path nvm; then
   SF_WARNS+=("[nvm plugin]: $(__sf_missing_binary_message 'nvm')")
   return

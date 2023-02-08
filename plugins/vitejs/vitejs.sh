@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if ! is_bin_in_path node; then
   SF_WARNS+=("[vitejs plugin]: $(__sf_missing_binary_message 'nodejs')")
   return

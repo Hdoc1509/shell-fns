@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if ! is_bin_in_path wezterm; then
   SF_WARNS+=("[wezterm plugin]: $(__sf_missing_binary_message 'wezterm')")
   return

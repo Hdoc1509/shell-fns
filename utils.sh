@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # shellcheck source=colors.sh
 source "$SF_PATH"/colors.sh
 
