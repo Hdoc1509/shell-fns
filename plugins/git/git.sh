@@ -53,6 +53,7 @@ alias go='git open'
 alias gp='git push'
 alias gpao='git push --all origin'
 alias gpo='git push origin'
+alias gpsuo='git push --set-upstream origin'
 alias gpt='git push --tags'
 
 alias gpl='git pull'
