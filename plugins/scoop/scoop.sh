@@ -101,7 +101,7 @@ alias scst='scoop status'
 alias scstl='scoop status --local'
 
 alias scuh='scoop unhold'
-alias schug='scoop unhold --global'
+alias scuhg='scoop unhold --global'
 
 alias scui='scoop uninstall'
 alias scuig='scoop uninstall --global'
