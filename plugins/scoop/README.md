@@ -62,7 +62,7 @@ export SF_PLUGINS=(... scoop)
 | scst   | scoop status                       |
 | scstl  | scoop status --local               |
 | scuh   | scoop unhold                       |
-| schug  | scoop unhold --global              |
+| scuhg  | scoop unhold --global              |
 | scui   | scoop uninstall                    |
 | scuig  | scoop uninstall --global           |
 | scuip  | scoop uninstall --purge            |
