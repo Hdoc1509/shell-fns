@@ -30,9 +30,30 @@ npvi() {
   fi
 }
 
-#
-# ALIASES
-#
+yavi() {
+  local args_number=$#
+  local dir_name="${2}"
+  local template="${1}"
 
-alias yavi='yarn create vite'
-alias pnvi='pnpm create vite'
+  if ((args_number == 0)); then
+    yarn create vite
+  elif ((args_number == 2)); then
+    yarn create vite "${dir_name}" --template "${template}"
+  else
+    echo -e "${LIGHTRED}[ SHELL-FNS ]: ERROR - Expected 0 or 2 arguments"
+  fi
+}
+
+pnvi() {
+  local args_number=$#
+  local dir_name="${2}"
+  local template="${1}"
+
+  if ((args_number == 0)); then
+    pnpm create vite
+  elif ((args_number == 2)); then
+    pnpm create vite "${dir_name}" --template "${template}"
+  else
+    echo -e "${LIGHTRED}[ SHELL-FNS ]: ERROR - Expected 0 or 2 arguments"
+  fi
+}
