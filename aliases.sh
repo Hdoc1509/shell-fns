@@ -13,5 +13,5 @@ alias .2='cd ../..'
 alias .3='cd ../../..'
 alias c=clear
 alias zz=exit
-alias rm='rm -r'
-alias rmf='rm -rf'
+alias rm='rm -rv'
+alias rmf='rm -rvf'
