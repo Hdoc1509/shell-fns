@@ -7,19 +7,19 @@ Minimalist plugins for bash and zsh.
 Clone the repository in your local machine:
 
 ```sh
-git clone --depth 1 https://github.com/Hdoc1509/shell-fns.git ~/shell-fns
+git clone --depth 1 https://github.com/Hdoc1509/shell-fns.git ~/.shell-fns
 ```
 
 ## Usage
 
-Source `~/shell-fns/main.sh` after setting required variables and desired
+Source `~/.shell-fns/main.sh` after setting required variables and desired
 plugins in your `~/.bashrc` or `~/.zshrc` file:
 
 ```sh
 export SF_EDITOR='subl'
 export SF_PLUGINS=( git npm pip )
 
-source ~/.config/shell-fns/main.sh
+source ~/.shell-fns/main.sh
 ```
 
 ### Plugins
@@ -43,17 +43,17 @@ source ~/.config/shell-fns/main.sh
 
 ### Built-in aliases
 
-| Alias | Command                        |
-| ----- | ------------------------------ |
-| sfCf  | cd ~/shell-fns; ${SF_EDITOR} . |
-| path  | echo -e "${PATH//:/\\\n}"      |
-| mkd   | mkdir -p                       |
-| ..    | cd ..                          |
-| .1    | cd ..                          |
-| .2    | cd ../..                       |
-| .3    | cd ../../..                    |
-| c     | clear                          |
-| zz    | exit                           |
+| Alias | Command                         |
+| ----- | ------------------------------- |
+| sfCf  | cd ~/.shell-fns; ${SF_EDITOR} . |
+| path  | echo -e "${PATH//:/\\\n}"       |
+| mkd   | mkdir -p                        |
+| ..    | cd ..                           |
+| .1    | cd ..                           |
+| .2    | cd ../..                        |
+| .3    | cd ../../..                     |
+| c     | clear                           |
+| zz    | exit                            |
 
 ### Global variables
 
