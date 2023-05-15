@@ -54,6 +54,9 @@ source ~/.shell-fns/main.sh
 | .3    | cd ../../..                     |
 | c     | clear                           |
 | zz    | exit                            |
+| rm    | rm -rv                          |
+| rmf   | rm -rvf                         |
+| cp    | cp -rv                          |
 
 ### Global variables
 
