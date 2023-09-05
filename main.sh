@@ -20,4 +20,4 @@ else
   done
 fi
 
-(("${#SF_WARNS[@]}" > 0)) && __sf_show_warns
+[[ "${#SF_WARNS[@]}" -gt 0 ]] && __sf_show_warns
