@@ -7,12 +7,12 @@ source "$SF_PATH"/utils.sh
 source "$SF_PATH"/aliases.sh
 
 if [[ -z "$SF_PLUGINS" || "${#SF_PLUGINS[@]}" == '0' ]]; then
-  echo -e "${ORANGE}Warning: No plugins selected${NOCOLOR}"
+  echo -e "${ORANGE}[ SHELL-FNS ]: No plugins selected${NOCOLOR}"
 else
   for plugin in "${SF_PLUGINS[@]}"; do
     plugin_dir="$SF_PLUGINS_PATH"/"$plugin"
     if ! [[ -d "$plugin_dir" ]]; then
-      echo -e "${LIGHTRED}Error: Plugin \"$plugin\" doesn't exists${NOCOLOR}"
+      echo -e "${LIGHTRED}[ SHELL-FNS ]: Plugin \"$plugin\" doesn't exists${NOCOLOR}"
     else
       # shellcheck disable=SC1090
       source "$plugin_dir"/"$plugin".sh
