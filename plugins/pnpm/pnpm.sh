@@ -20,6 +20,8 @@ alias pnE='pnpm add -E'
 alias pnG='pnpm add -g'
 alias pnO='pnpm add -O'
 
+alias pnx='pnpm exec'
+
 alias pni='pnpm import'
 
 alias pnI='pnpm install'
