@@ -22,7 +22,7 @@ export SF_PLUGINS=( git npm pip )
 source ~/.shell-fns/main.sh
 ```
 
-### Plugins
+## Plugins
 
 - [gh](/plugins/gh/)
 - [gh_gist](/plugins/gh_gist/)
@@ -41,7 +41,7 @@ source ~/.shell-fns/main.sh
 - [vitejs](/plugins/vitejs/)
 - [wezterm](/plugins/wezterm/)
 
-### Built-in aliases
+## Built-in aliases
 
 | Alias | Command                         |
 | ----- | ------------------------------- |
@@ -58,13 +58,13 @@ source ~/.shell-fns/main.sh
 | rmf   | rm -rvf                         |
 | cp    | cp -rv                          |
 
-### Global variables
+## Global variables
 
 These variables are required and are used by some plugins:
 
 - `SF_EDITOR`: Editor executable name. Example: `subl`, `code`, `nvim`. It can also be editor functions of [`neovim`](/plugins/neovim/) plugin.
 
-### Colored messages
+## Colored messages
 
 You can print colored messages with `echo -e`:
 
@@ -92,3 +92,11 @@ Available colors:
 - `LIGHTPURPLE`
 - `LIGHTCYAN`
 - `WHITE`
+
+## Updates
+
+If you want to update `shell-fns`, you just need to run:
+
+```bash
+shell_fns_update
+```

@@ -5,6 +5,7 @@ export SF_WARNS=()
 source "$SF_PATH"/colors.sh
 source "$SF_PATH"/utils.sh
 source "$SF_PATH"/aliases.sh
+source "$SF_PATH"/update.sh
 
 if [[ -z "$SF_PLUGINS" || "${#SF_PLUGINS[@]}" == '0' ]]; then
   echo -e "${ORANGE}[ SHELL-FNS ]: No plugins selected${NOCOLOR}"
