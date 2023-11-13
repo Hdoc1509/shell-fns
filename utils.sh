@@ -17,9 +17,11 @@ source_files_in() {
 
 is_bin_in_path() {
   if [[ -n "$ZSH_VERSION" ]]; then
-    builtin whence -p "$1" &>/dev/null
+    builtin whence -p "$1" &>/dev/null ||
+      builtin command -v "$1" &>/dev/null
   else # bash
-    builtin type -P "$1" &>/dev/null
+    builtin type -P "$1" &>/dev/null ||
+      builtin command -v "$1" &>/dev/null
   fi
 }
 
