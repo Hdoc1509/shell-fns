@@ -22,9 +22,9 @@ alias pnO='pnpm add -O'
 
 alias pnx='pnpm exec'
 
-alias pni='pnpm import'
+alias pnim='pnpm import'
 
-alias pnI='pnpm install'
+alias pni='pnpm install'
 
 alias pnL='pnpm list'
 alias pnLD='pnpm list -D'
