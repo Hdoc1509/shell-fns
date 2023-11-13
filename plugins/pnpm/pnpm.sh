@@ -26,6 +26,8 @@ alias pnim='pnpm import'
 
 alias pni='pnpm install'
 
+alias pnI='pnpm init'
+
 alias pnL='pnpm list'
 alias pnLD='pnpm list -D'
 alias pnLG='pnpm list -g'
