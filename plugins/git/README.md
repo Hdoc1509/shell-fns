@@ -35,6 +35,7 @@ export SF_PLUGINS=(... git)
 | gcob  | git checkout -b                |
 | gcoM  | git checkout master            |
 | gd    | git diff                       |
+| gdst  | git diff --stat                |
 | gdom  | git diff origin/master         |
 | gf    | git fetch                      |
 | gH    | git help                       |
@@ -70,3 +71,5 @@ export SF_PLUGINS=(... git)
 ## Functions
 
 - `git_aliases`: Show all aliases of `git` plugin.
+
+
