@@ -18,8 +18,9 @@ export SF_PLUGINS=(... pnpm)
 | pnE   | pnpm add -E           |
 | pnG   | pnpm add -g           |
 | pnO   | pnpm add -O           |
-| pni   | pnpm import           |
-| pnI   | pnpm install          |
+| pnim  | pnpm import           |
+| pni   | pnpm install          |
+| pnI   | pnpm init             |
 | pnL   | pnpm list             |
 | pnLD  | pnpm list -D          |
 | pnLG  | pnpm list -g          |
