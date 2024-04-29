@@ -54,4 +54,6 @@ alias pnUpD='pnpm update -D'
 alias pnUpG='pnpm update -g'
 alias pnUpP='pnpm update -P'
 
+alias pnV='pnpm --version'
+
 alias pnWr='pnpm --workspace-root'
