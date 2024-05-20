@@ -63,6 +63,8 @@ export SF_PLUGINS=(... git)
 | gshH  | git show HEAD                  |
 | gst   | git status                     |
 | gsts  | git status --short             |
+| gsw   | git switch                     |
+| gswc  | git switch -c                  |
 | gt    | git tag                        |
 | gta   | git tag --annotate             |
 | gtd   | git tag --delete               |
@@ -71,5 +73,3 @@ export SF_PLUGINS=(... git)
 ## Functions
 
 - `git_aliases`: Show all aliases of `git` plugin.
-
-

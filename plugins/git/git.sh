@@ -74,6 +74,9 @@ alias gshH='git show HEAD'
 alias gst='git status'
 alias gsts='git status --short'
 
+alias gsw='git switch'
+alias gswc='git switch -c'
+
 alias gt='git tag'
 alias gta='git tag --annotate'
 alias gtd='git tag --delete'
