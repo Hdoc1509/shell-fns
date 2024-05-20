@@ -18,7 +18,7 @@ alias c=clear
 
 alias zz=exit
 
-alias rm='rm -rv'
-alias rmf='rm -rvf'
+alias rm='rm -r'
+alias rmf='rm -rf'
 
 alias cp='cp -rv'
