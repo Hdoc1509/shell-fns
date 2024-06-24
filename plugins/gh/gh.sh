@@ -35,7 +35,7 @@ alias ghbn='gh browse --no-browser'
 alias ghbp='gh browse --projects'
 alias ghbs='gh browse --settings'
 alias ghbw='gh browse --wiki'
-
+alias ghbx='xdg-open $(gh browse --no-browser)'
 alias ghcf='gh config'
 alias ghcfg='gh config get'
 alias ghcfl='gh config list'
