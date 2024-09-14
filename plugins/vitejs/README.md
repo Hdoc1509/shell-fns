@@ -16,7 +16,7 @@ export SF_PLUGINS=(... vitejs)
 
 **All functions use the same arguments:**
 
-- $1: Desired template. You should take a look to the <a href="https://github.com/vitejs/vite/tree/main/packages/create-vite#scaffolding-your-first-vite-project" target="_blank">supported templates</a>
+- $1: Desired template. You should take a look to the [supported templates](https://github.com/vitejs/vite/tree/main/packages/create-vite#scaffolding-your-first-vite-project)
 - $2: Directory name. Can be `.` for current folder.
 
 **If no argument is passed**, each function will use the default prompt for its package manager
