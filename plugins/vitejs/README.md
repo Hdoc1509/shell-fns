@@ -23,8 +23,20 @@ export SF_PLUGINS=(... vitejs)
 
 ## Examples
 
-```sh
-npvi react-ts .         # react-ts template for current folder using npm
-yavi vanilla my-project # vanilla template in folder my-project using yarn
-pnvi                    # default prompt for pnpm
-```
+- `react-ts` template for current folder using `npm`
+
+  ```sh
+  npvi react-ts .
+  ```
+
+- `vanilla` template in folder `my-project` using `yarn`
+
+  ```sh
+  yavi vanilla my-project
+  ```
+
+- `default` prompt for `pnpm`
+
+  ```sh
+  pnvi
+  ```
