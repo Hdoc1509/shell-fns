@@ -60,8 +60,7 @@ alias gpt='git push --tags'
 
 alias gpl='git pull'
 
-alias grm='git rm'
-alias grmr='git rm -r'
+alias grm='git rm -r'
 
 alias grs='git restore'
 alias grss='git restore --staged'

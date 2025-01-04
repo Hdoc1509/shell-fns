@@ -54,8 +54,7 @@ export SF_PLUGINS=(... git)
 | gpsuo | git push --set-upstream origin |
 | gpt   | git push --tags                |
 | gpl   | git pull                       |
-| grm   | git rm                         |
-| grmr  | git rm -r                      |
+| grm   | git rm -r                      |
 | grs   | git restore                    |
 | grss  | git restore --staged           |
 | grt   | git reset                      |
