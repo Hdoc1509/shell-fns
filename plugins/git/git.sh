@@ -10,6 +10,7 @@ git_aliases() { __sf_show_plugin_aliases "git"; }
 
 alias ga='git add'
 alias gaa='git add --all'
+alias gax='git add --chmod=+x'
 
 alias gb='git branch'
 alias gba='git branch --all'

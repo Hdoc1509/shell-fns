@@ -18,6 +18,7 @@ export SF_PLUGINS=(... git)
 | ----- | ------------------------------ |
 | ga    | git add                        |
 | gaa   | git add --all                  |
+| gax   | git add --chmod=+x             |
 | gb    | git branch                     |
 | gba   | git branch --all               |
 | gbd   | git branch --delete            |
