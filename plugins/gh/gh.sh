@@ -11,6 +11,32 @@ export GH_PLUGIN_SOURCED=true
 
 gh_aliases() { __sf_show_plugin_aliases 'gh'; }
 
+gh_switch_user() {
+  local user=$1
+  local _tmpfile
+
+  _tmpfile=$(mktemp)
+
+  if [[ -z $user ]]; then
+    if ! gh auth switch; then
+      echo "${LIGHTRED}Error: Aborting operations${NOCOLOR}"
+      return 1
+    fi
+  else
+    if ! gh auth switch --user "$user"; then
+      echo "${LIGHTRED}Error: Aborting operations${NOCOLOR}"
+      return 1
+    fi
+  fi
+
+  gh api /user >"$_tmpfile"
+
+  git config --global user.name "$(jq -r ".login" "$_tmpfile")"
+  git config --global user.email "$(jq -r ".email" "$_tmpfile")"
+
+  rm --force -- "$_tmpfile"
+}
+
 #
 # ALIASES
 #

@@ -52,4 +52,7 @@ export SF_PLUGINS=(... gh)
 
 ## Functions
 
+- `gh_switch_user`: Switch the active account based on the `user` argument
+  - `$1 (optional)`: User account. Run `gh auth status` to get the list of
+    available accounts
 - `gh_aliases`: Show all aliases of `gh` plugin.
