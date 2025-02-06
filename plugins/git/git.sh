@@ -26,6 +26,7 @@ alias gcam='git commit --amend -m'
 alias gcf='git config'
 alias gcfl='git config --list'
 alias gcfg='git config --global'
+alias gcfge='git config --global --edit'
 alias gcfgl='git config --global --list'
 
 alias gco='git checkout'

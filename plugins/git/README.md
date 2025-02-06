@@ -31,6 +31,7 @@ export SF_PLUGINS=(... git)
 | gcf   | git config                     |
 | gcfl  | git config --list              |
 | gcfg  | git config --global            |
+| gcfge | git config --global --edit     |
 | gcfgl | git config --global --list     |
 | gco   | git checkout                   |
 | gcob  | git checkout -b                |
