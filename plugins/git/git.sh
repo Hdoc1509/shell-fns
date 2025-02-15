@@ -51,7 +51,7 @@ alias glon='git log --oneline -n'
 
 alias gmv='git mv'
 
-alias go='git open'
+alias gop='git open'
 
 alias gp='git push'
 alias gpao='git push --all origin'

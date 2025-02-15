@@ -48,7 +48,7 @@ export SF_PLUGINS=(... git)
 | glo   | git log --oneline              |
 | glon  | git log --oneline -n           |
 | gmv   | git mv                         |
-| go    | git open                       |
+| gop   | git open                       |
 | gp    | git push                       |
 | gpao  | git push --all origin          |
 | gpo   | git push origin                |
