@@ -1,0 +1,100 @@
+### /* vim: set ft=sh : */
+_available_colors=$(tput colors)
+# TODO:
+# - add documentation in README.md
+# - add `bin` to PATH automatically
+
+
+_help() {
+  echo "A wrapper around 'echo' to simplify output decoration"
+  echo "Recommended to use it along 'echo' command"
+  echo
+  echo "Usage: echolor [OPTIONS] [<args>] <text>"
+  echo
+  echo "Arguments:"
+  echo "  <args>  Arguments to pass to 'echo'"
+  echo "          If no arguments are passed, the help information will be shown"
+  echo
+  echo "  <text>  Text to print"
+  echo
+  echo "Options:"
+  echo "  -f, --fg <color>"
+  echo "    Foreground color. Number between 0 and ${_available_colors}."
+  echo "    Default: 7 (white)"
+  echo
+  echo "  -b, --bg <color>"
+  echo "    Background color. number between 0 and ${_available_colors}."
+  echo "    Default: 0 (black)"
+  echo
+  echo "  -sf,  --show-foregrounds"
+  echo "    Show available foreground colors along with their number"
+  echo
+  echo "  -sb, --show-backgrounds"
+  echo "    Show available background colors along with their number"
+  echo
+  echo "  -h, --help"
+  echo "    Show help information"
+}
+
+if [ -z "$1" ]; then
+  _help
+  exit 1
+fi
+
+_show_foregrounds() {
+  for color in $(seq 0 "${_available_colors}"); do
+    tput setaf "$color"
+    echo -n "$color"
+    tput sgr0
+    echo -n " "
+  done
+  tput sgr0
+  echo
+}
+
+_show_backgrounds() {
+  for color in $(seq 0 "${_available_colors}"); do
+    tput setab "$color"
+    echo -n "$color"
+    tput sgr0
+    echo -n " "
+  done
+  tput sgr0
+  echo
+}
+
+while [ $# -gt 0 ]; do
+  case $1 in
+  -f | --fg) _fg=$2 ;;
+  -b | --bg) _bg=$2 ;;
+  # TODO: add bold, italic and underline
+  -sf | --show-foregrounds)
+    _show_foregrounds
+    exit
+    ;;
+  -sb | --show-backgrounds)
+    _show_backgrounds
+    exit
+    ;;
+  -h | --help)
+    _help
+    exit
+    ;;
+  -n | --no-newline)
+    _no_newline=1
+    ;;
+  *) _text=$* ;;
+  esac
+  shift
+done
+
+if [[ -n $_fg ]]; then tput setaf "$_fg"; fi
+if [[ -n $_bg ]]; then tput setab "$_bg"; fi
+
+if [[ -n $_no_newline ]]; then
+  echo -n "$_text"
+else
+  echo "$_text"
+fi
+
+tput sgr0
