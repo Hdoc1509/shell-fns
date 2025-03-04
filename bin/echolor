@@ -4,7 +4,6 @@ _available_colors=$(tput colors)
 # - add documentation in README.md
 # - add `bin` to PATH automatically
 
-
 _help() {
   echo "A wrapper around 'echo' to simplify output decoration"
   echo "Recommended to use it along 'echo' command"
@@ -88,10 +87,10 @@ while [ $# -gt 0 ]; do
   shift
 done
 
-if [[ -n $_fg ]]; then tput setaf "$_fg"; fi
-if [[ -n $_bg ]]; then tput setab "$_bg"; fi
+if [ -n "$_fg" ]; then tput setaf "$_fg"; fi
+if [ -n "$_bg" ]; then tput setab "$_bg"; fi
 
-if [[ -n $_no_newline ]]; then
+if [ -n "$_no_newline" ]; then
   echo -n "$_text"
 else
   echo "$_text"
