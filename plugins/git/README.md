@@ -39,6 +39,7 @@ export SF_PLUGINS=(... git)
 | gcoM  | git checkout master            |
 | gd    | git diff                       |
 | gdst  | git diff --stat                |
+| gdstH | git diff --stat HEAD^          |
 | gdom  | git diff origin/master         |
 | gf    | git fetch                      |
 | gH    | git help                       |

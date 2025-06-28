@@ -35,6 +35,7 @@ alias gcoM='git checkout master'
 
 alias gd='git diff'
 alias gdst='git diff --stat'
+alias gdstH='git diff --stat HEAD^'
 alias gdom='git diff origin/master'
 
 alias gf='git fetch'
