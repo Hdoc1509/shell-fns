@@ -1,6 +1,7 @@
 # git plugin
 
-The `git` plugin provides some [aliases](#aliases) and [functions](#functions) for git.
+The `git` plugin provides some [aliases](#aliases) and [functions](#functions)
+for git.
 
 To use it, add `git` to plugins array in your `~/.bashrc` or `~/.zshrc` file:
 
