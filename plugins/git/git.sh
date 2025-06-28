@@ -20,7 +20,7 @@ alias gbsc='git branch --show-current'
 
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gca='git commit --ammend'
+alias gca='git commit --amend'
 alias gcam='git commit --amend -m'
 
 alias gcf='git config'

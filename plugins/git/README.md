@@ -26,7 +26,7 @@ export SF_PLUGINS=(... git)
 | gbsc  | git branch --show-current      |
 | gc    | git commit                     |
 | gcm   | git commit -m                  |
-| gca   | git commit --ammend            |
+| gca   | git commit --amend             |
 | gcam  | git commit --amend -m          |
 | gcf   | git config                     |
 | gcfl  | git config --list              |
