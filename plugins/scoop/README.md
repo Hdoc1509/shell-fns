@@ -34,7 +34,7 @@ export SF_PLUGINS=(... scoop)
 | scdp   | scoop depends                      |
 | scdl   | scoop download                     |
 | scdlf  | scoop download --force             |
-| scdlh  | scoop downlad --no-hash-check      |
+| scdlh  | scoop download --no-hash-check     |
 | scdlu  | scoop download --no-update-scoop   |
 | sce    | scoop export                       |
 | sch    | scoop help                         |

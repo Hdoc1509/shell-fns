@@ -13,7 +13,7 @@ scoop_aliases() { __sf_show_plugin_aliases 'scoop'; }
 
 scoop_backup() {
   scoop export >"$SF_SCOOP_BACKUP"
-  echo "${LIGHTGREEN}Scoop backup done succesfully${NOCOLOR}"
+  echo "${LIGHTGREEN}Scoop backup done successfully${NOCOLOR}"
 }
 
 scoop_restore() {
@@ -59,7 +59,7 @@ alias scdp='scoop depends'
 
 alias scdl='scoop download'
 alias scdlf='scoop download --force'
-alias scdlh='scoop downlad --no-hash-check'
+alias scdlh='scoop download --no-hash-check'
 alias scdlu='scoop download --no-update-scoop'
 
 alias sce='scoop export'
