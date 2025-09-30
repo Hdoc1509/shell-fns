@@ -31,8 +31,8 @@ gh_switch_user() {
 
   gh api /user >"$_tmpfile"
 
-  git config --global user.name "$(jq -r ".login" "$_tmpfile")"
-  git config --global user.email "$(jq -r ".email" "$_tmpfile")"
+  git config --global user.name "$(jq -r '.login' "$_tmpfile")"
+  git config --global user.email "$(jq -r '.email' "$_tmpfile")"
 
   rm --force -- "$_tmpfile"
 }
